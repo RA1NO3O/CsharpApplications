@@ -1,0 +1,10 @@
+E:\Dev\CS\Test6\bin\Debug\netcoreapp3.1\Test6.exe
+E:\Dev\CS\Test6\bin\Debug\netcoreapp3.1\Test6.deps.json
+E:\Dev\CS\Test6\bin\Debug\netcoreapp3.1\Test6.runtimeconfig.json
+E:\Dev\CS\Test6\bin\Debug\netcoreapp3.1\Test6.runtimeconfig.dev.json
+E:\Dev\CS\Test6\bin\Debug\netcoreapp3.1\Test6.dll
+E:\Dev\CS\Test6\bin\Debug\netcoreapp3.1\Test6.pdb
+E:\Dev\CS\Test6\obj\Debug\netcoreapp3.1\Test6.AssemblyInfoInputs.cache
+E:\Dev\CS\Test6\obj\Debug\netcoreapp3.1\Test6.AssemblyInfo.cs
+E:\Dev\CS\Test6\obj\Debug\netcoreapp3.1\Test6.dll
+E:\Dev\CS\Test6\obj\Debug\netcoreapp3.1\Test6.pdb
