@@ -1,0 +1,9 @@
+E:\RA1N\Oct15th\Oct15th\Oct15th\bin\Debug\Oct15th.exe.config
+E:\RA1N\Oct15th\Oct15th\Oct15th\bin\Debug\Oct15th.exe
+E:\RA1N\Oct15th\Oct15th\Oct15th\bin\Debug\Oct15th.pdb
+E:\RA1N\Oct15th\Oct15th\Oct15th\obj\Debug\Oct15th.csprojResolveAssemblyReference.cache
+E:\RA1N\Oct15th\Oct15th\Oct15th\obj\Debug\Oct15th.Form1.resources
+E:\RA1N\Oct15th\Oct15th\Oct15th\obj\Debug\Oct15th.Properties.Resources.resources
+E:\RA1N\Oct15th\Oct15th\Oct15th\obj\Debug\Oct15th.csproj.GenerateResource.Cache
+E:\RA1N\Oct15th\Oct15th\Oct15th\obj\Debug\Oct15th.exe
+E:\RA1N\Oct15th\Oct15th\Oct15th\obj\Debug\Oct15th.pdb
