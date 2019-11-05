@@ -1,0 +1,9 @@
+E:\RA1N\GitHub\CsharpApplications\Nov5th\Nov5th\bin\Debug\Nov5th.exe.config
+E:\RA1N\GitHub\CsharpApplications\Nov5th\Nov5th\bin\Debug\Nov5th.exe
+E:\RA1N\GitHub\CsharpApplications\Nov5th\Nov5th\bin\Debug\Nov5th.pdb
+E:\RA1N\GitHub\CsharpApplications\Nov5th\Nov5th\obj\Debug\Nov5th.csprojAssemblyReference.cache
+E:\RA1N\GitHub\CsharpApplications\Nov5th\Nov5th\obj\Debug\Nov5th.Form1.resources
+E:\RA1N\GitHub\CsharpApplications\Nov5th\Nov5th\obj\Debug\Nov5th.Properties.Resources.resources
+E:\RA1N\GitHub\CsharpApplications\Nov5th\Nov5th\obj\Debug\Nov5th.csproj.GenerateResource.cache
+E:\RA1N\GitHub\CsharpApplications\Nov5th\Nov5th\obj\Debug\Nov5th.exe
+E:\RA1N\GitHub\CsharpApplications\Nov5th\Nov5th\obj\Debug\Nov5th.pdb

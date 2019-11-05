@@ -1,0 +1,9 @@
+E:\RA1N\GitHub\CsharpApplications\Nov5th\StudentDoc\bin\Debug\StudentDoc.exe.config
+E:\RA1N\GitHub\CsharpApplications\Nov5th\StudentDoc\bin\Debug\StudentDoc.exe
+E:\RA1N\GitHub\CsharpApplications\Nov5th\StudentDoc\bin\Debug\StudentDoc.pdb
+E:\RA1N\GitHub\CsharpApplications\Nov5th\StudentDoc\obj\Debug\StudentDoc.csprojAssemblyReference.cache
+E:\RA1N\GitHub\CsharpApplications\Nov5th\StudentDoc\obj\Debug\StudentDoc.Form1.resources
+E:\RA1N\GitHub\CsharpApplications\Nov5th\StudentDoc\obj\Debug\StudentDoc.Properties.Resources.resources
+E:\RA1N\GitHub\CsharpApplications\Nov5th\StudentDoc\obj\Debug\StudentDoc.csproj.GenerateResource.cache
+E:\RA1N\GitHub\CsharpApplications\Nov5th\StudentDoc\obj\Debug\StudentDoc.exe
+E:\RA1N\GitHub\CsharpApplications\Nov5th\StudentDoc\obj\Debug\StudentDoc.pdb
