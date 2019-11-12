@@ -1,0 +1,9 @@
+E:\Dev\Git\CsharpApplications\Nov5th\SexSelector\bin\Debug\SexSelector.exe.config
+E:\Dev\Git\CsharpApplications\Nov5th\SexSelector\bin\Debug\SexSelector.exe
+E:\Dev\Git\CsharpApplications\Nov5th\SexSelector\bin\Debug\SexSelector.pdb
+E:\Dev\Git\CsharpApplications\Nov5th\SexSelector\obj\Debug\SexSelector.csprojAssemblyReference.cache
+E:\Dev\Git\CsharpApplications\Nov5th\SexSelector\obj\Debug\SexSelector.Form1.resources
+E:\Dev\Git\CsharpApplications\Nov5th\SexSelector\obj\Debug\SexSelector.Properties.Resources.resources
+E:\Dev\Git\CsharpApplications\Nov5th\SexSelector\obj\Debug\SexSelector.csproj.GenerateResource.cache
+E:\Dev\Git\CsharpApplications\Nov5th\SexSelector\obj\Debug\SexSelector.exe
+E:\Dev\Git\CsharpApplications\Nov5th\SexSelector\obj\Debug\SexSelector.pdb

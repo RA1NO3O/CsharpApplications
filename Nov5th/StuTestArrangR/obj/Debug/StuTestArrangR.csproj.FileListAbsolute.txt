@@ -1,0 +1,9 @@
+E:\Dev\Git\CsharpApplications\Nov5th\StuTestArrangR\bin\Debug\StuTestArrangR.exe.config
+E:\Dev\Git\CsharpApplications\Nov5th\StuTestArrangR\bin\Debug\StuTestArrangR.exe
+E:\Dev\Git\CsharpApplications\Nov5th\StuTestArrangR\bin\Debug\StuTestArrangR.pdb
+E:\Dev\Git\CsharpApplications\Nov5th\StuTestArrangR\obj\Debug\StuTestArrangR.csprojAssemblyReference.cache
+E:\Dev\Git\CsharpApplications\Nov5th\StuTestArrangR\obj\Debug\StuTestArrangR.Form1.resources
+E:\Dev\Git\CsharpApplications\Nov5th\StuTestArrangR\obj\Debug\StuTestArrangR.Properties.Resources.resources
+E:\Dev\Git\CsharpApplications\Nov5th\StuTestArrangR\obj\Debug\StuTestArrangR.csproj.GenerateResource.cache
+E:\Dev\Git\CsharpApplications\Nov5th\StuTestArrangR\obj\Debug\StuTestArrangR.exe
+E:\Dev\Git\CsharpApplications\Nov5th\StuTestArrangR\obj\Debug\StuTestArrangR.pdb

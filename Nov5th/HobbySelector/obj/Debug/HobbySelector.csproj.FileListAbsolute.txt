@@ -1,0 +1,8 @@
+E:\Dev\Git\CsharpApplications\Nov5th\HobbySelector\obj\Debug\HobbySelector.Form1.resources
+E:\Dev\Git\CsharpApplications\Nov5th\HobbySelector\obj\Debug\HobbySelector.Properties.Resources.resources
+E:\Dev\Git\CsharpApplications\Nov5th\HobbySelector\obj\Debug\HobbySelector.csproj.GenerateResource.cache
+E:\Dev\Git\CsharpApplications\Nov5th\HobbySelector\bin\Debug\HobbySelector.exe.config
+E:\Dev\Git\CsharpApplications\Nov5th\HobbySelector\bin\Debug\HobbySelector.exe
+E:\Dev\Git\CsharpApplications\Nov5th\HobbySelector\bin\Debug\HobbySelector.pdb
+E:\Dev\Git\CsharpApplications\Nov5th\HobbySelector\obj\Debug\HobbySelector.exe
+E:\Dev\Git\CsharpApplications\Nov5th\HobbySelector\obj\Debug\HobbySelector.pdb
