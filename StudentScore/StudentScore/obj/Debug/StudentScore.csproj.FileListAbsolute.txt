@@ -1,9 +1,0 @@
-E:\RA1N\GitHub\CsharpApplications\StudentScore\StudentScore\bin\Debug\StudentScore.exe.config
-E:\RA1N\GitHub\CsharpApplications\StudentScore\StudentScore\bin\Debug\StudentScore.exe
-E:\RA1N\GitHub\CsharpApplications\StudentScore\StudentScore\bin\Debug\StudentScore.pdb
-E:\RA1N\GitHub\CsharpApplications\StudentScore\StudentScore\obj\Debug\StudentScore.csprojResolveAssemblyReference.cache
-E:\RA1N\GitHub\CsharpApplications\StudentScore\StudentScore\obj\Debug\StudentScore.frmLogin.resources
-E:\RA1N\GitHub\CsharpApplications\StudentScore\StudentScore\obj\Debug\StudentScore.Properties.Resources.resources
-E:\RA1N\GitHub\CsharpApplications\StudentScore\StudentScore\obj\Debug\StudentScore.csproj.GenerateResource.Cache
-E:\RA1N\GitHub\CsharpApplications\StudentScore\StudentScore\obj\Debug\StudentScore.exe
-E:\RA1N\GitHub\CsharpApplications\StudentScore\StudentScore\obj\Debug\StudentScore.pdb
