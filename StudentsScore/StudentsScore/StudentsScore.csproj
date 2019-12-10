@@ -148,6 +148,9 @@
     <Content Include="Resources\course.ico" />
     <Content Include="Resources\login.jpg" />
     <Content Include="Resources\score.ico" />
+    <Content Include="Resources\Student.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\student.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

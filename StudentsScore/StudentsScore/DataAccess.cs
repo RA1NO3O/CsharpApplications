@@ -16,7 +16,7 @@ namespace StudentsScore
         OleDbConnection oledbCon;
         public void dataCon()
         {
-            strDSN = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath.ToString() + "\\Student.accdb";     oledbCon = new OleDbConnection(strDSN);
+            strDSN = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Application.StartupPath.ToString() + "\\Resources/Student.accdb";     oledbCon = new OleDbConnection(strDSN);
         }
         public DataSet getDataset(string sql)
         {

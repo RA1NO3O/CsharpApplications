@@ -47,7 +47,7 @@
             this.tsmiAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiVersion = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsslblInfo = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsbtnStudent = new System.Windows.Forms.ToolStripButton();
             this.tsbtnCourse = new System.Windows.Forms.ToolStripButton();
@@ -84,27 +84,30 @@
             // tsmiStudentSearch
             // 
             this.tsmiStudentSearch.Name = "tsmiStudentSearch";
-            this.tsmiStudentSearch.Size = new System.Drawing.Size(152, 22);
+            this.tsmiStudentSearch.Size = new System.Drawing.Size(180, 22);
             this.tsmiStudentSearch.Text = "学生信息查询";
             this.tsmiStudentSearch.Click += new System.EventHandler(this.tsmiStudentSearch_Click);
             // 
             // tsmiStudentAdd
             // 
             this.tsmiStudentAdd.Name = "tsmiStudentAdd";
-            this.tsmiStudentAdd.Size = new System.Drawing.Size(152, 22);
+            this.tsmiStudentAdd.Size = new System.Drawing.Size(180, 22);
             this.tsmiStudentAdd.Text = "学生信息添加";
+            this.tsmiStudentAdd.Click += new System.EventHandler(this.tsmiStudentAdd_Click);
             // 
             // tsmiStudentUpdate
             // 
             this.tsmiStudentUpdate.Name = "tsmiStudentUpdate";
-            this.tsmiStudentUpdate.Size = new System.Drawing.Size(152, 22);
+            this.tsmiStudentUpdate.Size = new System.Drawing.Size(180, 22);
             this.tsmiStudentUpdate.Text = "学生信息修改";
+            this.tsmiStudentUpdate.Click += new System.EventHandler(this.tsmiStudentUpdate_Click);
             // 
             // tsmiStudentDelete
             // 
             this.tsmiStudentDelete.Name = "tsmiStudentDelete";
-            this.tsmiStudentDelete.Size = new System.Drawing.Size(152, 22);
+            this.tsmiStudentDelete.Size = new System.Drawing.Size(180, 22);
             this.tsmiStudentDelete.Text = "学生信息删除";
+            this.tsmiStudentDelete.Click += new System.EventHandler(this.tsmiStudentDelete_Click);
             // 
             // tsmiCourse
             // 
@@ -120,26 +123,30 @@
             // tsmiCourseSearch
             // 
             this.tsmiCourseSearch.Name = "tsmiCourseSearch";
-            this.tsmiCourseSearch.Size = new System.Drawing.Size(148, 22);
+            this.tsmiCourseSearch.Size = new System.Drawing.Size(180, 22);
             this.tsmiCourseSearch.Text = "课程信息查询";
+            this.tsmiCourseSearch.Click += new System.EventHandler(this.tsmiCourseSearch_Click);
             // 
             // tsmiCourseAdd
             // 
             this.tsmiCourseAdd.Name = "tsmiCourseAdd";
-            this.tsmiCourseAdd.Size = new System.Drawing.Size(148, 22);
+            this.tsmiCourseAdd.Size = new System.Drawing.Size(180, 22);
             this.tsmiCourseAdd.Text = "课程信息添加";
+            this.tsmiCourseAdd.Click += new System.EventHandler(this.tsmiCourseAdd_Click);
             // 
             // tsmiCourseUpdate
             // 
             this.tsmiCourseUpdate.Name = "tsmiCourseUpdate";
-            this.tsmiCourseUpdate.Size = new System.Drawing.Size(148, 22);
+            this.tsmiCourseUpdate.Size = new System.Drawing.Size(180, 22);
             this.tsmiCourseUpdate.Text = "课程信息修改";
+            this.tsmiCourseUpdate.Click += new System.EventHandler(this.tsmiCourseUpdate_Click);
             // 
             // tsmiCourseDelete
             // 
             this.tsmiCourseDelete.Name = "tsmiCourseDelete";
-            this.tsmiCourseDelete.Size = new System.Drawing.Size(148, 22);
+            this.tsmiCourseDelete.Size = new System.Drawing.Size(180, 22);
             this.tsmiCourseDelete.Text = "课程信息删除";
+            this.tsmiCourseDelete.Click += new System.EventHandler(this.tsmiCourseDelete_Click);
             // 
             // tsmiScore
             // 
@@ -155,26 +162,30 @@
             // tsmiScoreSearch
             // 
             this.tsmiScoreSearch.Name = "tsmiScoreSearch";
-            this.tsmiScoreSearch.Size = new System.Drawing.Size(124, 22);
+            this.tsmiScoreSearch.Size = new System.Drawing.Size(180, 22);
             this.tsmiScoreSearch.Text = "成绩查询";
+            this.tsmiScoreSearch.Click += new System.EventHandler(this.tsmiScoreSearch_Click);
             // 
             // tsmiScoreAdd
             // 
             this.tsmiScoreAdd.Name = "tsmiScoreAdd";
-            this.tsmiScoreAdd.Size = new System.Drawing.Size(124, 22);
+            this.tsmiScoreAdd.Size = new System.Drawing.Size(180, 22);
             this.tsmiScoreAdd.Text = "成绩添加";
+            this.tsmiScoreAdd.Click += new System.EventHandler(this.tsmiScoreAdd_Click);
             // 
             // tsmiScoreUpdate
             // 
             this.tsmiScoreUpdate.Name = "tsmiScoreUpdate";
-            this.tsmiScoreUpdate.Size = new System.Drawing.Size(124, 22);
+            this.tsmiScoreUpdate.Size = new System.Drawing.Size(180, 22);
             this.tsmiScoreUpdate.Text = "成绩修改";
+            this.tsmiScoreUpdate.Click += new System.EventHandler(this.tsmiScoreUpdate_Click);
             // 
             // tsmiScoreDelete
             // 
             this.tsmiScoreDelete.Name = "tsmiScoreDelete";
-            this.tsmiScoreDelete.Size = new System.Drawing.Size(124, 22);
+            this.tsmiScoreDelete.Size = new System.Drawing.Size(180, 22);
             this.tsmiScoreDelete.Text = "成绩删除";
+            this.tsmiScoreDelete.Click += new System.EventHandler(this.tsmiScoreDelete_Click);
             // 
             // tsmiAbout
             // 
@@ -187,24 +198,25 @@
             // tsmiVersion
             // 
             this.tsmiVersion.Name = "tsmiVersion";
-            this.tsmiVersion.Size = new System.Drawing.Size(100, 22);
+            this.tsmiVersion.Size = new System.Drawing.Size(180, 22);
             this.tsmiVersion.Text = "版本";
+            this.tsmiVersion.Click += new System.EventHandler(this.tsmiVersion_Click);
             // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
+            this.tsslblInfo});
             this.statusStrip1.Location = new System.Drawing.Point(0, 707);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1008, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel1
+            // tsslblInfo
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(152, 17);
-            this.toolStripStatusLabel1.Text = "欢迎进入学生成绩管理系统";
+            this.tsslblInfo.Name = "tsslblInfo";
+            this.tsslblInfo.Size = new System.Drawing.Size(152, 17);
+            this.tsslblInfo.Text = "欢迎进入学生成绩管理系统";
             // 
             // toolStrip1
             // 
@@ -226,6 +238,7 @@
             this.tsbtnStudent.Name = "tsbtnStudent";
             this.tsbtnStudent.Size = new System.Drawing.Size(23, 22);
             this.tsbtnStudent.Text = "学生信息查询";
+            this.tsbtnStudent.Click += new System.EventHandler(this.tsbtnStudent_Click);
             // 
             // tsbtnCourse
             // 
@@ -235,6 +248,7 @@
             this.tsbtnCourse.Name = "tsbtnCourse";
             this.tsbtnCourse.Size = new System.Drawing.Size(23, 22);
             this.tsbtnCourse.Text = "课程信息查询";
+            this.tsbtnCourse.Click += new System.EventHandler(this.tsbtnCourse_Click);
             // 
             // tsbtnScore
             // 
@@ -244,6 +258,7 @@
             this.tsbtnScore.Name = "tsbtnScore";
             this.tsbtnScore.Size = new System.Drawing.Size(23, 22);
             this.tsbtnScore.Text = "成绩查询";
+            this.tsbtnScore.Click += new System.EventHandler(this.tsbtnScore_Click);
             // 
             // frmMain
             // 
@@ -283,7 +298,7 @@
         private System.Windows.Forms.ToolStripButton tsbtnStudent;
         private System.Windows.Forms.ToolStripButton tsbtnCourse;
         private System.Windows.Forms.ToolStripButton tsbtnScore;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel tsslblInfo;
         private System.Windows.Forms.ToolStripMenuItem tsmiStudentSearch;
         private System.Windows.Forms.ToolStripMenuItem tsmiStudentAdd;
         private System.Windows.Forms.ToolStripMenuItem tsmiStudentUpdate;
