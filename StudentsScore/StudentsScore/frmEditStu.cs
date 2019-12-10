@@ -22,7 +22,7 @@ namespace StudentsScore
             string strsql = "";
             if (txtSname.Text != "" && txtBirthday.Text != "" && txtClass.Text != "" && txtTel.Text != "" && txtAddress.Text != "" && cboSex.Text != "")
             {
-                strsql = "update Studentinfo set Snamne'" + txtSname.Text + "',Sex='" + cboSex.Text + "',Birthday='" + txtBirthday.Text + "',Class='" + txtClass.Text + "',Tel='" + txtTel.Text + "',Address='" + txtAddress.Text + "'where Sid='" + frmManageStu.sid + "'";
+                strsql = "update Studentinfo set Sname ='" + txtSname.Text + " ',Sex = '" + cboSex.Text + "',Birthday='" + txtBirthday.Text + "',Class='" + txtClass.Text + "',Tel='" + txtTel.Text + "',Address='" + txtAddress.Text + "'where Sid='" + frmManageStu.Sid + "'";
                 DataAccess data = new DataAccess();
                 data.dataCon(); 
                 if (data.sqlExec(strsql))
@@ -48,6 +48,12 @@ namespace StudentsScore
         private void frmEditStu_Load(object sender, EventArgs e)
         {
             txtSid.Text = frmManageStu.sid;
+            txtSname.Text = frmManageStu.sname;
+            cboSex.Text = frmManageStu.sex;
+            txtBirthday.Text = frmManageStu.birthday;
+            txtClass.Text = frmManageStu.classname;
+            txtTel.Text = frmManageStu.tel;
+            txtAddress.Text = frmManageStu.address;
         }
     }
 }
