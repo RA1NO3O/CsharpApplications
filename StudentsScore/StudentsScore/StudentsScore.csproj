@@ -121,14 +121,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StudentDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmAddCourse.resx">
+      <DependentUpon>frmAddCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddScore.resx">
+      <DependentUpon>frmAddScore.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAddStu.resx">
       <DependentUpon>frmAddStu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditCourse.resx">
+      <DependentUpon>frmEditCourse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageCourse.resx">
+      <DependentUpon>frmManageCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageScore.resx">
+      <DependentUpon>frmManageScore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmManageStu.resx">
       <DependentUpon>frmManageStu.cs</DependentUpon>
