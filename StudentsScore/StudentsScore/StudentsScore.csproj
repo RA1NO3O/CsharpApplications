@@ -47,13 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccess.cs" />
     <Compile Include="frmAbout.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAbout.Designer.cs">
       <DependentUpon>frmAbout.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataAccess.cs" />
     <Compile Include="frmAddCourse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +121,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StudentDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAddCourse.resx">
       <DependentUpon>frmAddCourse.cs</DependentUpon>
     </EmbeddedResource>
