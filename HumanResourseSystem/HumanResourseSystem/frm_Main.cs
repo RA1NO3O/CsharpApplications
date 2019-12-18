@@ -16,5 +16,10 @@ namespace HumanResourseSystem
         {
             InitializeComponent();
         }
+
+        private void frm_Main_FormClosed(object sender, FormClosedEventArgs e)
+        {       //窗体关闭后事件
+            Application.Exit();
+        }
     }
 }
