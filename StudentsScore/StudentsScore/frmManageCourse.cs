@@ -31,7 +31,7 @@ namespace StudentsScore
             DataSet ds;
             if (txtCid.Text != "")
             {
-                condition += "and Cid=;" + txtCid.Text + "'";
+                condition += "and Cid='" + txtCid.Text + "'";
             }
             if (txtCname.Text != "")
             {

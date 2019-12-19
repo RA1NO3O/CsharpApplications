@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataConnector.cs" />
+    <Compile Include="frm_DBMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DBMgmt.Designer.cs">
+      <DependentUpon>frm_DBMgmt.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +65,60 @@
     <Compile Include="frm_Main.Designer.cs">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_PeopleAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PeopleAdd.Designer.cs">
+      <DependentUpon>frm_PeopleAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PeopleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PeopleEdit.Designer.cs">
+      <DependentUpon>frm_PeopleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PeopleMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PeopleMgmt.Designer.cs">
+      <DependentUpon>frm_PeopleMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PeopleSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PeopleSearch.Designer.cs">
+      <DependentUpon>frm_PeopleSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SalaryAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SalaryAdd.Designer.cs">
+      <DependentUpon>frm_SalaryAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SalaryEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SalaryEdit.Designer.cs">
+      <DependentUpon>frm_SalaryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SalaryMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SalaryMgmt.Designer.cs">
+      <DependentUpon>frm_SalaryMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SalarySearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SalarySearch.Designer.cs">
+      <DependentUpon>frm_SalarySearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SysMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SysMgmt.Designer.cs">
+      <DependentUpon>frm_SysMgmt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_Login.resx">
@@ -67,20 +127,38 @@
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_PeopleAdd.resx">
+      <DependentUpon>frm_PeopleAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PeopleEdit.resx">
+      <DependentUpon>frm_PeopleEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PeopleMgmt.resx">
+      <DependentUpon>frm_PeopleMgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PeopleSearch.resx">
+      <DependentUpon>frm_PeopleSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SalaryEdit.resx">
+      <DependentUpon>frm_SalaryEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SalaryMgmt.resx">
+      <DependentUpon>frm_SalaryMgmt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -91,9 +169,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\course.ico" />
+    <None Include="Resources\add.png" />
     <Content Include="Resources\HR.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\people.ico" />
+    <None Include="Resources\score.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

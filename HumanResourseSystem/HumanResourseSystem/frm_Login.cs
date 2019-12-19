@@ -12,6 +12,7 @@ namespace HumanResourseSystem
 {
     public partial class frm_Login : Form
     {
+        public static string username, password, permission;
         public frm_Login()
         {
 
@@ -20,19 +21,20 @@ namespace HumanResourseSystem
 
         private void btn_Login_Click(object sender, EventArgs e)
         {       //登录按钮事件
-            string username, password;
             string strSql = "";
             DataSet ds;
-            if (txt_Username.Text.Trim() != "" && txt_Password.Text.Trim() != "")
+            if (txt_Username.Text.Trim() != "")
             {
                 username = txt_Username.Text.Trim(); password = txt_Password.Text.Trim();
                 strSql = "select * from LoginUsers where username = '" + username + "' and password='" + password + "'";
+                if (txt_Password.Text.Equals("")) { strSql = "select * from LoginUsers where username = '" + username + "'"; }
                 DataConnector data = new DataConnector();
                 data.dataCon();
                 ds = data.getDataset(strSql);
-
+                
                 if (ds.Tables[0].Rows.Count == 1)
                 {
+                    permission = ds.Tables[0].Rows[0][3].ToString();
                     frm_Main fMain = new frm_Main();
                     fMain.Show();
                     this.Hide();
@@ -44,7 +46,7 @@ namespace HumanResourseSystem
             }
             else
             {
-                MessageBox.Show("用户名或密码为空，请输入信息", "提示");
+                MessageBox.Show("用户名为空，请输入信息", "提示");
             }
         }
 
