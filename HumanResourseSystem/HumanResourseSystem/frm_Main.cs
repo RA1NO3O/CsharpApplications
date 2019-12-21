@@ -43,13 +43,6 @@ namespace HumanResourseSystem
             frmSM.Show();
         }
 
-        private void 人员系统管理YToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frm_SysMgmt frmYM = new frm_SysMgmt();
-            frmYM.MdiParent = this;
-            frmYM.Show();
-        }
-
         private void 数据库管理TToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(System.IO.Directory.GetCurrentDirectory()+"\\Resources\\HR.accdb");
@@ -159,6 +152,12 @@ namespace HumanResourseSystem
         {
             frm_PeopleAdd pa = new frm_PeopleAdd();
             pa.ShowDialog();
+        }
+
+        private void 关于AToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AboutBox1 about = new AboutBox1();
+            about.ShowDialog();
         }
     }
 }

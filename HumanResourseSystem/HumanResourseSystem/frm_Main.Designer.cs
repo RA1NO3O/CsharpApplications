@@ -33,7 +33,6 @@
             this.系统SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.人员档案管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.人员工资管理SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.人员系统管理YToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.数据库管理TToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.登出LToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,7 +70,6 @@
             this.系统SToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.人员档案管理ToolStripMenuItem,
             this.人员工资管理SToolStripMenuItem,
-            this.人员系统管理YToolStripMenuItem,
             this.toolStripSeparator1,
             this.数据库管理TToolStripMenuItem,
             this.登出LToolStripMenuItem,
@@ -102,16 +100,6 @@
             this.人员工资管理SToolStripMenuItem.MouseEnter += new System.EventHandler(this.人员工资管理SToolStripMenuItem_MouseEnter);
             this.人员工资管理SToolStripMenuItem.MouseLeave += new System.EventHandler(this.Items_MouseLeave);
             // 
-            // 人员系统管理YToolStripMenuItem
-            // 
-            this.人员系统管理YToolStripMenuItem.Image = global::HumanResourseSystem.Properties.Resources.course;
-            this.人员系统管理YToolStripMenuItem.Name = "人员系统管理YToolStripMenuItem";
-            this.人员系统管理YToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.人员系统管理YToolStripMenuItem.Text = "人员系统管理(&Y)";
-            this.人员系统管理YToolStripMenuItem.Click += new System.EventHandler(this.人员系统管理YToolStripMenuItem_Click);
-            this.人员系统管理YToolStripMenuItem.MouseEnter += new System.EventHandler(this.人员系统管理YToolStripMenuItem_MouseEnter);
-            this.人员系统管理YToolStripMenuItem.MouseLeave += new System.EventHandler(this.Items_MouseLeave);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
@@ -119,6 +107,7 @@
             // 
             // 数据库管理TToolStripMenuItem
             // 
+            this.数据库管理TToolStripMenuItem.Image = global::HumanResourseSystem.Properties.Resources.course;
             this.数据库管理TToolStripMenuItem.Name = "数据库管理TToolStripMenuItem";
             this.数据库管理TToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.数据库管理TToolStripMenuItem.Text = "打开数据库..(&T)";
@@ -135,7 +124,7 @@
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W)));
+            this.退出ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
             this.退出ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
@@ -176,8 +165,9 @@
             // 关于AToolStripMenuItem1
             // 
             this.关于AToolStripMenuItem1.Name = "关于AToolStripMenuItem1";
-            this.关于AToolStripMenuItem1.Size = new System.Drawing.Size(144, 22);
+            this.关于AToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.关于AToolStripMenuItem1.Text = "关于... (&A)";
+            this.关于AToolStripMenuItem1.Click += new System.EventHandler(this.关于AToolStripMenuItem1_Click);
             this.关于AToolStripMenuItem1.MouseEnter += new System.EventHandler(this.关于AToolStripMenuItem1_MouseEnter);
             this.关于AToolStripMenuItem1.MouseLeave += new System.EventHandler(this.Items_MouseLeave);
             // 
@@ -204,7 +194,7 @@
             this.添加工资记录ToolStripMenuItem,
             this.添加部门记录ToolStripMenuItem});
             this.ms_QuickAdd.Name = "ms_QuickAdd";
-            this.ms_QuickAdd.Size = new System.Drawing.Size(188, 92);
+            this.ms_QuickAdd.Size = new System.Drawing.Size(188, 70);
             // 
             // 添加人员档案ToolStripMenuItem
             // 
@@ -280,7 +270,6 @@
         private System.Windows.Forms.ToolStripMenuItem 关于AToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 人员档案管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 人员工资管理SToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 人员系统管理YToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem 数据库管理TToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;

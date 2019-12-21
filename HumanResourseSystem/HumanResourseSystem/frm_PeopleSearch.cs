@@ -21,12 +21,15 @@ namespace HumanResourseSystem
         private void btn_Execute_Click(object sender, EventArgs e)
         {
             string condition = "";
-            if (txt_ID.Text != "") { condition += "and 编号='" + txt_ID.Text + "'"; }
-            if (txt_Sex.Text != "") { condition += "and 性别='" + txt_Sex.Text + "'"; }
-            if (txt_Age.Text != "") { condition += "and 年龄='" + txt_Age.Text + "'"; }
-            if (txt_Position.Text != "") { condition += "and 就职岗位='" + txt_Position.Text + "'"; }
-            if (txt_Phone.Text != "") { condition += "and 电话='" + txt_Phone.Text + "'"; }
-            if (txt_Address.Text != "") { condition += "and 住址='" + txt_Address.Text + "'"; }
+            if (txt_ID.Text != "") { condition += "and ID='" + txt_ID.Text + "'"; }
+            if (txt_Name.Text != "") { condition += "and EName='" + txt_Name + "'"; }
+            if (txt_Sex.Text != "") { condition += "and Sex='" + txt_Sex.Text + "'"; }
+            if (txt_Birthday.Text != "") { condition += "and Birthday='" + txt_Birthday.Text + "'"; }
+            if (txt_Inworkdate.Text != "") { condition += "and InworkDate='" + txt_Inworkdate.Text + "'"; }
+            if (txt_Age.Text != "") { condition += "and Age='" + txt_Age.Text + "'"; }
+            if (txt_Position.Text != "") { condition += "and Position='" + txt_Position.Text + "'"; }
+            if (txt_Phone.Text != "") { condition += "and Tel='" + txt_Phone.Text + "'"; }
+            if (txt_Address.Text != "") { condition += "and Address='" + txt_Address.Text + "'"; }
             strSql = "SELECT * FROM Employee WHERE 1=1 " + condition;
             frm_PeopleMgmt.ExecSQL();
             this.Close();
@@ -35,6 +38,11 @@ namespace HumanResourseSystem
         private void btn_Reset_Click(object sender, EventArgs e)
         {
             txt_ID.Text = "";txt_Sex.Text = "";txt_Age.Text = ""; txt_Position.Text = "";txt_Phone .Text= "";txt_Address.Text = "";
+        }
+
+        private void frm_PeopleSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == 13) { btn_Execute_Click(sender, e); }
         }
     }
 }

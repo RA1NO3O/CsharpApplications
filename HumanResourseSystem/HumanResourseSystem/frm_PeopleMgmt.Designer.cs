@@ -34,7 +34,7 @@
             this.btn_Delete = new System.Windows.Forms.Button();
             this.btn_Reset = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.hintBox = new System.Windows.Forms.ToolStripStatusLabel();
+            frm_PeopleMgmt.hintBox = new System.Windows.Forms.ToolStripStatusLabel();
             frm_PeopleMgmt.dgv_People = new System.Windows.Forms.DataGridView();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(frm_PeopleMgmt.dgv_People)).BeginInit();
@@ -111,7 +111,7 @@
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.hintBox});
+            frm_PeopleMgmt.hintBox});
             this.statusStrip1.Location = new System.Drawing.Point(0, 380);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(685, 22);
@@ -120,9 +120,9 @@
             // 
             // hintBox
             // 
-            this.hintBox.Name = "hintBox";
-            this.hintBox.Size = new System.Drawing.Size(32, 17);
-            this.hintBox.Text = "状态";
+            frm_PeopleMgmt.hintBox.Name = "hintBox";
+            frm_PeopleMgmt.hintBox.Size = new System.Drawing.Size(32, 17);
+            frm_PeopleMgmt.hintBox.Text = "状态";
             // 
             // dgv_People
             // 
@@ -136,6 +136,7 @@
             frm_PeopleMgmt.dgv_People.RowTemplate.Height = 23;
             frm_PeopleMgmt.dgv_People.Size = new System.Drawing.Size(661, 336);
             frm_PeopleMgmt.dgv_People.TabIndex = 7;
+            frm_PeopleMgmt.dgv_People.MouseEnter += new System.EventHandler(frm_PeopleMgmt.dgv_People_MouseEnter);
             // 
             // frm_PeopleMgmt
             // 
@@ -169,7 +170,7 @@
         private System.Windows.Forms.Button btn_Delete;
         private System.Windows.Forms.Button btn_Reset;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel hintBox;
+        private static System.Windows.Forms.ToolStripStatusLabel hintBox;
         private static System.Windows.Forms.DataGridView dgv_People;
     }
 }

@@ -35,9 +35,9 @@
             this.btn_Edit = new System.Windows.Forms.Button();
             this.btn_Add = new System.Windows.Forms.Button();
             this.btn_Search = new System.Windows.Forms.Button();
-            this.dgv_People = new System.Windows.Forms.DataGridView();
+            frm_SalaryMgmt.dgv_Salary = new System.Windows.Forms.DataGridView();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_People)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(frm_SalaryMgmt.dgv_Salary)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -114,19 +114,19 @@
             this.btn_Search.UseVisualStyleBackColor = true;
             this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
-            // dgv_People
+            // dgv_Salary
             // 
-            this.dgv_People.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            frm_SalaryMgmt.dgv_Salary.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_People.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.dgv_People.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_People.Location = new System.Drawing.Point(12, 12);
-            this.dgv_People.Name = "dgv_People";
-            this.dgv_People.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
-            this.dgv_People.RowTemplate.Height = 23;
-            this.dgv_People.Size = new System.Drawing.Size(661, 334);
-            this.dgv_People.TabIndex = 14;
+            frm_SalaryMgmt.dgv_Salary.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            frm_SalaryMgmt.dgv_Salary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            frm_SalaryMgmt.dgv_Salary.Location = new System.Drawing.Point(12, 12);
+            frm_SalaryMgmt.dgv_Salary.Name = "dgv_Salary";
+            frm_SalaryMgmt.dgv_Salary.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
+            frm_SalaryMgmt.dgv_Salary.RowTemplate.Height = 23;
+            frm_SalaryMgmt.dgv_Salary.Size = new System.Drawing.Size(661, 334);
+            frm_SalaryMgmt.dgv_Salary.TabIndex = 14;
             // 
             // frm_SalaryMgmt
             // 
@@ -139,14 +139,14 @@
             this.Controls.Add(this.btn_Edit);
             this.Controls.Add(this.btn_Add);
             this.Controls.Add(this.btn_Search);
-            this.Controls.Add(this.dgv_People);
+            this.Controls.Add(frm_SalaryMgmt.dgv_Salary);
             this.MinimumSize = new System.Drawing.Size(440, 440);
             this.Name = "frm_SalaryMgmt";
             this.Text = "人员工资管理";
             this.Load += new System.EventHandler(this.frm_SalaryMgmt_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_People)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(frm_SalaryMgmt.dgv_Salary)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,6 +161,6 @@
         private System.Windows.Forms.Button btn_Edit;
         private System.Windows.Forms.Button btn_Add;
         private System.Windows.Forms.Button btn_Search;
-        private System.Windows.Forms.DataGridView dgv_People;
+        private static System.Windows.Forms.DataGridView dgv_Salary;
     }
 }

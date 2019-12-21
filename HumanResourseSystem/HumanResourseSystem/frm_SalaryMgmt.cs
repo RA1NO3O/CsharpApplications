@@ -17,6 +17,16 @@ namespace HumanResourseSystem
             InitializeComponent();
         }
 
+        public static string Id { get => id; set => id = value; }
+        public static string Bs { get => bs; set => bs = value; }
+        public static string Tax { get => tax; set => tax = value; }
+        public static string Es { get => es; set => es = value; }
+
+        private static string id;
+        private static string bs;
+        private static string tax;
+        private static string es;
+
         private void frm_SalaryMgmt_Load(object sender, EventArgs e)
         {
             if (frm_Login.permission.Equals("ReadOnly"))
@@ -32,10 +42,10 @@ namespace HumanResourseSystem
             string strSql;
             DataConnector data = new DataConnector();
             DataSet ds;
-            strSql = "SELECT * FROM Salary";
+            strSql = "SELECT ID AS 编号 , BS AS 基本工资 , Tax AS 应缴税 , ES AS 实发工资 FROM Salary";
             data.dataCon();
             ds = data.getDataset(strSql);
-            dgv_People.DataSource = ds.Tables[0];
+            dgv_Salary.DataSource = ds.Tables[0];
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)
@@ -44,7 +54,7 @@ namespace HumanResourseSystem
             {
                 string strSql;
                 DataConnector data = new DataConnector();
-                strSql = "delete from Employee where 编号='" + dgv_People.CurrentRow.Cells[0].Value.ToString() + "'";
+                strSql = "delete from Salary where ID='" + dgv_Salary.CurrentRow.Cells[0].Value.ToString() + "'";
                 data.dataCon();
                 if (data.sqlExec(strSql))
                 {
@@ -60,6 +70,10 @@ namespace HumanResourseSystem
 
         private void btn_Edit_Click(object sender, EventArgs e)
         {
+            id = dgv_Salary.CurrentRow.Cells[0].Value.ToString();
+            bs = dgv_Salary.CurrentRow.Cells[1].Value.ToString();
+            tax = dgv_Salary.CurrentRow.Cells[2].Value.ToString();
+            es = dgv_Salary.CurrentRow.Cells[3].Value.ToString();
             frm_SalaryEdit E = new frm_SalaryEdit();
             E.ShowDialog();
         }
@@ -68,6 +82,7 @@ namespace HumanResourseSystem
         {
             frm_SalaryAdd A = new frm_SalaryAdd();
             A.ShowDialog();
+            refresh();
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
@@ -77,7 +92,16 @@ namespace HumanResourseSystem
 
         private void btn_Search_Click(object sender, EventArgs e)
         {
-
+            frm_SalarySearch S = new frm_SalarySearch();
+            S.ShowDialog();
+        }
+        public static void ExecSQL()
+        {
+            DataConnector data = new DataConnector();
+            DataSet ds;
+            data.dataCon();
+            ds = data.getDataset(frm_SalarySearch.strSql);
+            dgv_Salary.DataSource = ds.Tables[0];
         }
     }
 }

@@ -23,7 +23,7 @@ namespace HumanResourseSystem
         {       //登录按钮事件
             string strSql = "";
             DataSet ds;
-            if (txt_Username.Text.Trim() != "")
+            if (txt_Username.Text.Trim() != ""&&txt_Password.Text.Trim()!="")
             {
                 username = txt_Username.Text.Trim(); password = txt_Password.Text.Trim();
                 strSql = "select * from LoginUsers where username = '" + username + "' and password='" + password + "'";
@@ -57,7 +57,7 @@ namespace HumanResourseSystem
         }
 
         private void frm_Login_Load(object sender, EventArgs e)
-        {
+        {   //初始化 
             label2.Text = "";
         }
     }
