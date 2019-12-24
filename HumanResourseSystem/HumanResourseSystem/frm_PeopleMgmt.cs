@@ -87,7 +87,7 @@ namespace HumanResourseSystem
                 }
                 else
                 {
-                    MessageBox.Show("删除失败!!", "关键性错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("删除失败!!", "结果", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
