@@ -37,11 +37,11 @@ namespace HumanResourseSystem
 
         private void btn_Execute_Click(object sender, EventArgs e)
         {
-            if (txt_ID.Text != "" && txt_Name.Text != "" && txt_Sex.Text != "" && txt_Birthday.Text != "" && txt_Inworkdate.Text != "")
+            if (txt_ID.TextLength != 0 && txt_Name.TextLength != 0 && txt_Sex.Text.Length != 0 && txt_Birthday.TextLength != 0 && txt_Inworkdate.TextLength != 0)
             {
                 string strSql;
                 DataConnector data = new DataConnector();
-                strSql = "update Employee set EName='" + txt_Name.Text + "' , Sex='" + txt_Sex.Text + "' , Age='" + txt_Age.Text + "' , Birthday='" + txt_Birthday.Text + "' , InworkDate='" + txt_Inworkdate.Text + "' , Position='" + txt_Position.Text + "' , Phone ='" + txt_Phone.Text + "' , Address = '" + txt_Address.Text + "' where ID='" + frm_PeopleMgmt.Id + "'";
+                strSql = "update Employee set EName='" + txt_Name.Text + "' , Sex='" + txt_Sex.Text + "' , Age='" + txt_Age.Text + "' , Birthday='" + txt_Birthday.Text + "' , InworkDate='" + txt_Inworkdate.Text + "' , Position='" + txt_Position.Text + "' , Phone ='" + txt_Phone.Text + "' , Address = '" + txt_Address.Text + "' where ID='" + txt_ID.Text + "'";
                 data.dataCon();
                 if (data.sqlExec(strSql))
                 {
@@ -55,7 +55,7 @@ namespace HumanResourseSystem
             }
             else
             {
-                MessageBox.Show("必须的字段未满足!!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("必须的字段未满足!!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

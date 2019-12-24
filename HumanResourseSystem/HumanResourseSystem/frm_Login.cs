@@ -41,12 +41,13 @@ namespace HumanResourseSystem
                 }
                 else
                 {
-                    MessageBox.Show("用户名或密码错误！", "登录失败");
+                    MessageBox.Show("用户名或密码错误！\r\n请重新输入.", "登录失败",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    txt_Password.Text = "";
                 }
             }
             else
             {
-                MessageBox.Show("用户名为空，请输入信息", "提示");
+                MessageBox.Show("用户名或密码为空，请输入完整的登录凭据.", "提示",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
 
@@ -54,6 +55,7 @@ namespace HumanResourseSystem
         {       //按下键事件
             label2.Text = "最后的按键值:"+e.KeyValue.ToString();
             if (e.KeyValue == 13) { btn_Login_Click(sender,e); }
+            if (e.KeyValue == 27) { Application.Exit(); }
         }
 
         private void frm_Login_Load(object sender, EventArgs e)

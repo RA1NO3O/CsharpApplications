@@ -26,7 +26,7 @@ namespace HumanResourseSystem
 
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void 人员档案管理ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -62,7 +62,6 @@ namespace HumanResourseSystem
         {
             if(MessageBox.Show("你确定要退出吗?", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)== System.Windows.Forms.DialogResult.Yes)
             {
-                Dispose();
                 Application.Exit();
             }
             else
@@ -158,6 +157,12 @@ namespace HumanResourseSystem
         {
             AboutBox1 about = new AboutBox1();
             about.ShowDialog();
+        }
+
+        private void 添加工资记录ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_SalaryAdd sa = new frm_SalaryAdd();
+            sa.ShowDialog();
         }
     }
 }
