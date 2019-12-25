@@ -23,7 +23,7 @@ namespace HumanResourseSystem
             {
                 string strSql;
                 DataConnector data = new DataConnector();
-                strSql = "insert into Employee ( 编号 , 姓名 , 性别 , 年龄 , 出生日期 , 入职日期 , 就职岗位 , 电话 , 住址 ) values('" + txt_ID.Text + "','" + txt_Name.Text + "','" + txt_Sex.Text + "','" + txt_Age.Text + "','" + txt_Birthday.Text + "','" + txt_Inworkdate.Text + "','" + txt_Position.Text + "','" + txt_Phone.Text + "','" + txt_Address.Text + "')";
+                strSql = "insert into Employee ( E_ID , E_Name , E_Sex , E_Age , E_Birthday , E_InworkDate , E_Position , E_Phone , E_Address ) values('" + txt_ID.Text + "','" + txt_Name.Text + "','" + txt_Sex.Text + "','" + txt_Age.Text + "','" + txt_Birthday.Text + "','" + txt_Inworkdate.Text + "','" + txt_Position.Text + "','" + txt_Phone.Text + "','" + txt_Address.Text + "')";
                 data.dataCon();
                 if (data.sqlExec(strSql))
                 {

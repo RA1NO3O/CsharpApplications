@@ -129,7 +129,7 @@
             frm_PeopleMgmt.dgv_People.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            frm_PeopleMgmt.dgv_People.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            frm_PeopleMgmt.dgv_People.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             frm_PeopleMgmt.dgv_People.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             frm_PeopleMgmt.dgv_People.Location = new System.Drawing.Point(12, 12);
             frm_PeopleMgmt.dgv_People.Name = "dgv_People";

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.txt_Address = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@
             this.txt_Inworkdate = new System.Windows.Forms.TextBox();
             this.btn_Execute = new System.Windows.Forms.Button();
             this.btn_Reset = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -66,6 +66,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "通常";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(38, 204);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(167, 12);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "* 部分查询字段目前暂不可用.";
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -76,7 +85,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.55224F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.44776F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 279F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 280F));
             this.tableLayoutPanel1.Controls.Add(this.txt_Address, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 4);
@@ -115,7 +124,7 @@
             // 
             this.txt_Address.Location = new System.Drawing.Point(74, 108);
             this.txt_Address.Name = "txt_Address";
-            this.txt_Address.Size = new System.Drawing.Size(164, 21);
+            this.txt_Address.Size = new System.Drawing.Size(163, 21);
             this.txt_Address.TabIndex = 35;
             this.txt_Address.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_PeopleSearch_KeyDown);
             // 
@@ -147,7 +156,7 @@
             // 
             // txt_Phone
             // 
-            this.txt_Phone.Location = new System.Drawing.Point(321, 82);
+            this.txt_Phone.Location = new System.Drawing.Point(320, 82);
             this.txt_Phone.Name = "txt_Phone";
             this.txt_Phone.Size = new System.Drawing.Size(200, 21);
             this.txt_Phone.TabIndex = 34;
@@ -157,7 +166,7 @@
             // 
             this.txt_ID.Location = new System.Drawing.Point(74, 3);
             this.txt_ID.Name = "txt_ID";
-            this.txt_ID.Size = new System.Drawing.Size(164, 21);
+            this.txt_ID.Size = new System.Drawing.Size(163, 21);
             this.txt_ID.TabIndex = 27;
             this.txt_ID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_PeopleSearch_KeyDown);
             // 
@@ -167,7 +176,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(244, 79);
+            this.label8.Location = new System.Drawing.Point(243, 79);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 26);
             this.label8.TabIndex = 25;
@@ -180,7 +189,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(244, 0);
+            this.label2.Location = new System.Drawing.Point(243, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 25);
             this.label2.TabIndex = 19;
@@ -189,7 +198,7 @@
             // 
             // txt_Name
             // 
-            this.txt_Name.Location = new System.Drawing.Point(321, 3);
+            this.txt_Name.Location = new System.Drawing.Point(320, 3);
             this.txt_Name.Name = "txt_Name";
             this.txt_Name.Size = new System.Drawing.Size(200, 21);
             this.txt_Name.TabIndex = 28;
@@ -223,7 +232,7 @@
             // 
             // txt_Age
             // 
-            this.txt_Age.Location = new System.Drawing.Point(321, 28);
+            this.txt_Age.Location = new System.Drawing.Point(320, 28);
             this.txt_Age.Name = "txt_Age";
             this.txt_Age.Size = new System.Drawing.Size(200, 21);
             this.txt_Age.TabIndex = 30;
@@ -236,7 +245,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Enabled = false;
-            this.label6.Location = new System.Drawing.Point(244, 52);
+            this.label6.Location = new System.Drawing.Point(243, 52);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(71, 27);
             this.label6.TabIndex = 23;
@@ -249,7 +258,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(244, 25);
+            this.label4.Location = new System.Drawing.Point(243, 25);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 27);
             this.label4.TabIndex = 21;
@@ -278,7 +287,7 @@
             "女"});
             this.txt_Sex.Location = new System.Drawing.Point(74, 28);
             this.txt_Sex.Name = "txt_Sex";
-            this.txt_Sex.Size = new System.Drawing.Size(164, 20);
+            this.txt_Sex.Size = new System.Drawing.Size(163, 20);
             this.txt_Sex.TabIndex = 29;
             this.txt_Sex.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_PeopleSearch_KeyDown);
             // 
@@ -286,7 +295,7 @@
             // 
             this.txt_Position.Location = new System.Drawing.Point(74, 82);
             this.txt_Position.Name = "txt_Position";
-            this.txt_Position.Size = new System.Drawing.Size(164, 21);
+            this.txt_Position.Size = new System.Drawing.Size(163, 21);
             this.txt_Position.TabIndex = 33;
             this.txt_Position.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_PeopleSearch_KeyDown);
             // 
@@ -295,14 +304,14 @@
             this.txt_Birthday.Enabled = false;
             this.txt_Birthday.Location = new System.Drawing.Point(74, 55);
             this.txt_Birthday.Name = "txt_Birthday";
-            this.txt_Birthday.Size = new System.Drawing.Size(164, 21);
+            this.txt_Birthday.Size = new System.Drawing.Size(163, 21);
             this.txt_Birthday.TabIndex = 36;
             this.txt_Birthday.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_PeopleSearch_KeyDown);
             // 
             // txt_Inworkdate
             // 
             this.txt_Inworkdate.Enabled = false;
-            this.txt_Inworkdate.Location = new System.Drawing.Point(321, 55);
+            this.txt_Inworkdate.Location = new System.Drawing.Point(320, 55);
             this.txt_Inworkdate.Name = "txt_Inworkdate";
             this.txt_Inworkdate.Size = new System.Drawing.Size(200, 21);
             this.txt_Inworkdate.TabIndex = 37;
@@ -331,15 +340,6 @@
             this.btn_Reset.Text = "重置(&R)";
             this.btn_Reset.UseVisualStyleBackColor = true;
             this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(38, 204);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(167, 12);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "* 部分查询字段目前暂不可用.";
             // 
             // frm_PeopleSearch
             // 

@@ -41,7 +41,7 @@ namespace HumanResourseSystem
             {
                 string strSql;
                 DataConnector data = new DataConnector();
-                strSql = "update Employee set EName='" + txt_Name.Text + "' , Sex='" + txt_Sex.Text + "' , Age='" + txt_Age.Text + "' , Birthday='" + txt_Birthday.Text + "' , InworkDate='" + txt_Inworkdate.Text + "' , Position='" + txt_Position.Text + "' , Phone ='" + txt_Phone.Text + "' , Address = '" + txt_Address.Text + "' where ID='" + txt_ID.Text + "'";
+                strSql = $"UPDATE Employee SET E_Name = '{txt_Name.Text}' ,E_ Sex = '{txt_Sex.Text}' , E_Age = '{txt_Age.Text}' , E_Birthday = '{txt_Birthday.Text}' , E_InworkDate = '{txt_Inworkdate.Text}' , E_Position = '{txt_Position.Text}' , E_Phone = '{txt_Phone.Text}' , E_Address = '{txt_Address.Text}' WHERE E_ID='{txt_ID.Text}'";
                 data.dataCon();
                 if (data.sqlExec(strSql))
                 {
