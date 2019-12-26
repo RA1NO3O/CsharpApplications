@@ -75,7 +75,7 @@ namespace HumanResourseSystem
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("你确定要删除选中的记录吗?","警告",MessageBoxButtons.YesNo,MessageBoxIcon.Warning)== System.Windows.Forms.DialogResult.Yes) {
+            if(MessageBox.Show("你确定要删除选中的记录吗?\r\n此操作无法撤销.","警告",MessageBoxButtons.YesNo,MessageBoxIcon.Warning)== System.Windows.Forms.DialogResult.Yes) {
                 string strSql;
                 DataConnector data = new DataConnector();
                 strSql = "delete from Employee where E_ID='" + dgv_People.CurrentRow.Cells[0].Value.ToString() + "'";

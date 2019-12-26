@@ -76,14 +76,14 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 25);
+            this.label1.Size = new System.Drawing.Size(64, 25);
             this.label1.TabIndex = 18;
             this.label1.Text = "编号";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txt_ID
             // 
-            this.txt_ID.Location = new System.Drawing.Point(74, 3);
+            this.txt_ID.Location = new System.Drawing.Point(73, 3);
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(163, 21);
             this.txt_ID.TabIndex = 27;
@@ -96,14 +96,14 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 27);
+            this.label2.Size = new System.Drawing.Size(64, 27);
             this.label2.TabIndex = 19;
             this.label2.Text = "应缴税";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txt_BasicSalary
             // 
-            this.txt_BasicSalary.Location = new System.Drawing.Point(320, 3);
+            this.txt_BasicSalary.Location = new System.Drawing.Point(319, 3);
             this.txt_BasicSalary.Name = "txt_BasicSalary";
             this.txt_BasicSalary.Size = new System.Drawing.Size(200, 21);
             this.txt_BasicSalary.TabIndex = 28;
@@ -118,7 +118,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.55224F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.44776F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 280F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 281F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txt_ID, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.txt_BasicSalary, 3, 0);
@@ -149,7 +149,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(243, 0);
+            this.label3.Location = new System.Drawing.Point(242, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 25);
             this.label3.TabIndex = 29;
@@ -162,7 +162,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(243, 25);
+            this.label4.Location = new System.Drawing.Point(242, 25);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 27);
             this.label4.TabIndex = 30;
@@ -171,14 +171,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(74, 28);
+            this.textBox1.Location = new System.Drawing.Point(73, 28);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(163, 21);
             this.textBox1.TabIndex = 31;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(320, 28);
+            this.textBox2.Location = new System.Drawing.Point(319, 28);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(200, 21);
             this.textBox2.TabIndex = 32;
@@ -201,6 +201,7 @@
             this.Controls.Add(this.btn_Reset);
             this.Controls.Add(this.btn_Execute);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frm_SalarySearch";
             this.Text = "查找薪资..";
             this.tableLayoutPanel1.ResumeLayout(false);

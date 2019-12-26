@@ -45,5 +45,10 @@ namespace HumanResourseSystem
         {
             txt_ID.Text = "";txt_Name.Text = ""; txt_Sex.Text = ""; txt_Age.Text = ""; txt_Birthday.Text = "";txt_Inworkdate.Text = ""; txt_Position.Text = ""; txt_Phone.Text = ""; txt_Address.Text = "";
         }
+
+        private void frm_PeopleAdd_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == 27) { this.Close(); }
+        }
     }
 }

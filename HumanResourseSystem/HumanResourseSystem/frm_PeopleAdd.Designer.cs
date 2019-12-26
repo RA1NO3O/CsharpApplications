@@ -75,7 +75,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.55224F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.44776F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 283F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 287F));
             this.tableLayoutPanel1.Controls.Add(this.txt_Address, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 4);
@@ -112,10 +112,11 @@
             // 
             // txt_Address
             // 
-            this.txt_Address.Location = new System.Drawing.Point(78, 112);
+            this.txt_Address.Location = new System.Drawing.Point(77, 112);
             this.txt_Address.Name = "txt_Address";
             this.txt_Address.Size = new System.Drawing.Size(165, 21);
             this.txt_Address.TabIndex = 35;
+            this.txt_Address.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_PeopleAdd_KeyDown);
             // 
             // label1
             // 
@@ -125,7 +126,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 27);
+            this.label1.Size = new System.Drawing.Size(68, 27);
             this.label1.TabIndex = 18;
             this.label1.Text = "编号*";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -138,24 +139,26 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(3, 109);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 28);
+            this.label9.Size = new System.Drawing.Size(68, 28);
             this.label9.TabIndex = 26;
             this.label9.Text = "住址";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txt_Phone
             // 
-            this.txt_Phone.Location = new System.Drawing.Point(335, 86);
+            this.txt_Phone.Location = new System.Drawing.Point(331, 86);
             this.txt_Phone.Name = "txt_Phone";
             this.txt_Phone.Size = new System.Drawing.Size(200, 21);
             this.txt_Phone.TabIndex = 34;
+            this.txt_Phone.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_PeopleAdd_KeyDown);
             // 
             // txt_ID
             // 
-            this.txt_ID.Location = new System.Drawing.Point(78, 3);
+            this.txt_ID.Location = new System.Drawing.Point(77, 3);
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(165, 21);
             this.txt_ID.TabIndex = 27;
+            this.txt_ID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_PeopleAdd_KeyDown);
             // 
             // label8
             // 
@@ -163,7 +166,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(258, 83);
+            this.label8.Location = new System.Drawing.Point(254, 83);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 26);
             this.label8.TabIndex = 25;
@@ -176,7 +179,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(258, 0);
+            this.label2.Location = new System.Drawing.Point(254, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 27);
             this.label2.TabIndex = 19;
@@ -185,10 +188,11 @@
             // 
             // txt_Name
             // 
-            this.txt_Name.Location = new System.Drawing.Point(335, 3);
+            this.txt_Name.Location = new System.Drawing.Point(331, 3);
             this.txt_Name.Name = "txt_Name";
             this.txt_Name.Size = new System.Drawing.Size(200, 21);
             this.txt_Name.TabIndex = 28;
+            this.txt_Name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_PeopleAdd_KeyDown);
             // 
             // label7
             // 
@@ -198,7 +202,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(3, 83);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 26);
+            this.label7.Size = new System.Drawing.Size(68, 26);
             this.label7.TabIndex = 24;
             this.label7.Text = "就职岗位";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -211,17 +215,18 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 27);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 29);
+            this.label3.Size = new System.Drawing.Size(68, 29);
             this.label3.TabIndex = 20;
             this.label3.Text = "性别*";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txt_Age
             // 
-            this.txt_Age.Location = new System.Drawing.Point(335, 30);
+            this.txt_Age.Location = new System.Drawing.Point(331, 30);
             this.txt_Age.Name = "txt_Age";
             this.txt_Age.Size = new System.Drawing.Size(200, 21);
             this.txt_Age.TabIndex = 30;
+            this.txt_Age.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_PeopleAdd_KeyDown);
             // 
             // label6
             // 
@@ -229,7 +234,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(258, 56);
+            this.label6.Location = new System.Drawing.Point(254, 56);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(71, 27);
             this.label6.TabIndex = 23;
@@ -242,7 +247,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(258, 27);
+            this.label4.Location = new System.Drawing.Point(254, 27);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 29);
             this.label4.TabIndex = 21;
@@ -257,7 +262,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(3, 56);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 27);
+            this.label5.Size = new System.Drawing.Size(68, 27);
             this.label5.TabIndex = 22;
             this.label5.Text = "出生日期*";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -268,31 +273,35 @@
             this.txt_Sex.Items.AddRange(new object[] {
             "男",
             "女"});
-            this.txt_Sex.Location = new System.Drawing.Point(78, 30);
+            this.txt_Sex.Location = new System.Drawing.Point(77, 30);
             this.txt_Sex.Name = "txt_Sex";
             this.txt_Sex.Size = new System.Drawing.Size(165, 20);
             this.txt_Sex.TabIndex = 29;
+            this.txt_Sex.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_PeopleAdd_KeyDown);
             // 
             // txt_Position
             // 
-            this.txt_Position.Location = new System.Drawing.Point(78, 86);
+            this.txt_Position.Location = new System.Drawing.Point(77, 86);
             this.txt_Position.Name = "txt_Position";
             this.txt_Position.Size = new System.Drawing.Size(165, 21);
             this.txt_Position.TabIndex = 33;
+            this.txt_Position.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_PeopleAdd_KeyDown);
             // 
             // txt_Birthday
             // 
-            this.txt_Birthday.Location = new System.Drawing.Point(78, 59);
+            this.txt_Birthday.Location = new System.Drawing.Point(77, 59);
             this.txt_Birthday.Name = "txt_Birthday";
             this.txt_Birthday.Size = new System.Drawing.Size(165, 21);
             this.txt_Birthday.TabIndex = 31;
+            this.txt_Birthday.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_PeopleAdd_KeyDown);
             // 
             // txt_Inworkdate
             // 
-            this.txt_Inworkdate.Location = new System.Drawing.Point(335, 59);
+            this.txt_Inworkdate.Location = new System.Drawing.Point(331, 59);
             this.txt_Inworkdate.Name = "txt_Inworkdate";
             this.txt_Inworkdate.Size = new System.Drawing.Size(200, 21);
             this.txt_Inworkdate.TabIndex = 32;
+            this.txt_Inworkdate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_PeopleAdd_KeyDown);
             // 
             // btn_Reset
             // 
@@ -305,6 +314,7 @@
             this.btn_Reset.Text = "重置(&R)";
             this.btn_Reset.UseVisualStyleBackColor = true;
             this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
+            this.btn_Reset.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_PeopleAdd_KeyDown);
             // 
             // btn_Execute
             // 
@@ -317,6 +327,7 @@
             this.btn_Execute.Text = "完成(&F)";
             this.btn_Execute.UseVisualStyleBackColor = true;
             this.btn_Execute.Click += new System.EventHandler(this.btn_Execute_Click);
+            this.btn_Execute.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_PeopleAdd_KeyDown);
             // 
             // label10
             // 
@@ -337,10 +348,12 @@
             this.Controls.Add(this.btn_Reset);
             this.Controls.Add(this.btn_Execute);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_PeopleAdd";
             this.Text = "新增人员记录";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_PeopleAdd_KeyDown);
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

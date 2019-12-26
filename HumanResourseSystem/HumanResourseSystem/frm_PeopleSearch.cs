@@ -21,18 +21,35 @@ namespace HumanResourseSystem
         private void btn_Execute_Click(object sender, EventArgs e)
         {
             string condition = "";
-            if (txt_ID.Text != "") { condition += "and E_ID='" + txt_ID.Text + "'"; }
-            if (txt_Name.Text != "") { condition += "and E_EName='" + txt_Name + "'"; }
-            if (txt_Sex.Text != "") { condition += "and E_Sex='" + txt_Sex.Text + "'"; }
-            if (txt_Birthday.Text != "") { condition += "and E_Birthday='" + txt_Birthday.Text + "'"; }
-            if (txt_Inworkdate.Text != "") { condition += "and E_InworkDate='" + txt_Inworkdate.Text + "'"; }
-            if (txt_Age.Text != "") { condition += "and E_Age='" + txt_Age.Text + "'"; }
-            if (txt_Position.Text != "") { condition += "and E_Position='" + txt_Position.Text + "'"; }
-            if (txt_Phone.Text != "") { condition += "and E_Tel='" + txt_Phone.Text + "'"; }
-            if (txt_Address.Text != "") { condition += "and E_Address='" + txt_Address.Text + "'"; }
-            strSql = "SELECT   E_ID AS 编号, E_Name AS 姓名, E_Sex AS 性别, E_Age AS 年龄, E_Birthday AS 出生日期, E_InworkDate AS 入职日期, E_Position AS 岗位, E_Phone AS 电话, E_Address AS 地址 FROM      Employee WHERE 1=1 " + condition;
+            if (chk_LIKEMODE.Checked==false)
+            {
+                if (txt_ID.Text != "") { condition += "and E_ID='" + txt_ID.Text + "'"; }
+                if (txt_Name.Text != "") { condition += "and E_Name='" + txt_Name.Text + "'"; }
+                if (txt_Sex.Text != "") { condition += "and E_Sex='" + txt_Sex.Text + "'"; }
+                if (txt_Birthday.Text != "") { condition += "and E_Birthday='" + txt_Birthday.Text + "'"; }
+                if (txt_Inworkdate.Text != "") { condition += "and E_InworkDate='" + txt_Inworkdate.Text + "'"; }
+                if (txt_Age.Text != "") { condition += "and E_Age='" + txt_Age.Text + "'"; }
+                if (txt_Position.Text != "") { condition += "and E_Position='" + txt_Position.Text + "'"; }
+                if (txt_Phone.Text != "") { condition += "and E_Tel='" + txt_Phone.Text + "'"; }
+                if (txt_Address.Text != "") { condition += "and E_Address='" + txt_Address.Text + "'"; }
+                strSql = "SELECT   E_ID AS 编号, E_Name AS 姓名, E_Sex AS 性别, E_Age AS 年龄, E_Birthday AS 出生日期, E_InworkDate AS 入职日期, E_Position AS 岗位, E_Phone AS 电话, E_Address AS 地址 FROM  Employee WHERE (1 = 1) " + condition;
+            }
+            else
+            {
+                if (txt_ID.Text != "") { condition += "AND (E_ID LIKE '%" + txt_ID.Text + "%')"; }
+                if (txt_Name.Text != "") { condition += "AND (E_Name LIKE '%" + txt_Name.Text + "%')"; }
+                if (txt_Sex.Text != "") { condition += "AND (E_Sex LIKE '%" + txt_Sex.Text + "%')"; }
+                if (txt_Birthday.Text != "") { condition += "AND (E_Birthday LIKE '%" + txt_Birthday.Text + "%')"; }
+                if (txt_Inworkdate.Text != "") { condition += "AND (E_InworkDate LIKE '%" + txt_Inworkdate.Text + "%')"; }
+                if (txt_Age.Text != "") { condition += "AND (E_Age LIKE '%" + txt_Age.Text + "%')"; }
+                if (txt_Position.Text != "") { condition += "AND (E_Position LIKE '%" + txt_Position.Text + "%')"; }
+                if (txt_Phone.Text != "") { condition += "AND (E_Tel= LIKE '%" + txt_Phone.Text + "%')"; }
+                if (txt_Address.Text != "") { condition += "AND (E_Address LIKE '%" + txt_Address.Text + "%')"; }
+                strSql = "SELECT   E_ID AS 编号, E_Name AS 姓名, E_Sex AS 性别, E_Age AS 年龄, E_Birthday AS 出生日期, E_InworkDate AS 入职日期, E_Position AS 岗位, E_Phone AS 电话, E_Address AS 地址 FROM Employee WHERE   (1 = 1) " + condition;
+            }
             frm_PeopleMgmt.ExecSQL();
             this.Close();
+
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
@@ -42,7 +59,7 @@ namespace HumanResourseSystem
 
         private void frm_PeopleSearch_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyValue == 13) { btn_Execute_Click(sender, e); }
+            if (e.KeyValue == 27) { this.Close(); }
         }
     }
 }

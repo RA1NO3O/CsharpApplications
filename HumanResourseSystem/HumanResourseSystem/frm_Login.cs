@@ -34,7 +34,7 @@ namespace HumanResourseSystem
                 
                 if (ds.Tables[0].Rows.Count == 1)
                 {
-                    permission = ds.Tables[0].Rows[0][3].ToString();
+                    permission = ds.Tables[0].Rows[0][2].ToString();    //获取SELECT视图中的单个记录信息
                     frm_Main fMain = new frm_Main();
                     fMain.Show();
                     this.Hide();

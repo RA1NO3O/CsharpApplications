@@ -131,10 +131,6 @@ namespace HumanResourseSystem
             hintbox.Text = "退出本系统.";
         }
 
-        private void 偏好设置PToolStripMenuItem_MouseEnter(object sender, EventArgs e)
-        {
-            hintbox.Text = "对程序进行个性化设置.";
-        }
 
         private void 登出LToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -163,6 +159,22 @@ namespace HumanResourseSystem
         {
             frm_SalaryAdd sa = new frm_SalaryAdd();
             sa.ShowDialog();
+        }
+
+        private void 登出LToolStripMenuItem_MouseEnter(object sender, EventArgs e)
+        {
+            hintbox.Text = "使用另一个账户登录.";
+        }
+
+        private void 偏好设置ToolStripMenuItem_MouseEnter(object sender, EventArgs e)
+        {
+            hintbox.Text = "对程序进行个性化设置(仅影响当前用户).";
+        }
+
+        private void 偏好设置ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Preferences p = new frm_Preferences();
+            p.ShowDialog();
         }
     }
 }

@@ -58,5 +58,10 @@ namespace HumanResourseSystem
                 MessageBox.Show("必须的字段未满足!!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void frm_PeopleEdit_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == 27) { this.Close(); }
+        }
     }
 }

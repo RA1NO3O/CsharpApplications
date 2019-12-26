@@ -75,16 +75,16 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 26);
+            this.label1.Size = new System.Drawing.Size(61, 26);
             this.label1.TabIndex = 18;
             this.label1.Text = "编号*";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txt_ID
             // 
-            this.txt_ID.Location = new System.Drawing.Point(78, 3);
+            this.txt_ID.Location = new System.Drawing.Point(70, 3);
             this.txt_ID.Name = "txt_ID";
-            this.txt_ID.Size = new System.Drawing.Size(165, 21);
+            this.txt_ID.Size = new System.Drawing.Size(159, 21);
             this.txt_ID.TabIndex = 27;
             // 
             // label2
@@ -93,16 +93,16 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(258, 0);
+            this.label2.Location = new System.Drawing.Point(235, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 26);
+            this.label2.Size = new System.Drawing.Size(84, 26);
             this.label2.TabIndex = 19;
             this.label2.Text = "基本工资*";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txt_BS
             // 
-            this.txt_BS.Location = new System.Drawing.Point(335, 3);
+            this.txt_BS.Location = new System.Drawing.Point(325, 3);
             this.txt_BS.Name = "txt_BS";
             this.txt_BS.Size = new System.Drawing.Size(200, 21);
             this.txt_BS.TabIndex = 28;
@@ -115,14 +115,14 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 26);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 29);
+            this.label3.Size = new System.Drawing.Size(61, 29);
             this.label3.TabIndex = 20;
             this.label3.Text = "应缴税";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txt_ES
             // 
-            this.txt_ES.Location = new System.Drawing.Point(335, 29);
+            this.txt_ES.Location = new System.Drawing.Point(325, 29);
             this.txt_ES.Name = "txt_ES";
             this.txt_ES.Size = new System.Drawing.Size(200, 21);
             this.txt_ES.TabIndex = 30;
@@ -133,24 +133,21 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(258, 26);
+            this.label4.Location = new System.Drawing.Point(235, 26);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 29);
+            this.label4.Size = new System.Drawing.Size(84, 29);
             this.label4.TabIndex = 21;
             this.label4.Text = "实发工资*";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.55224F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.44776F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 283F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.87931F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.12069F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 209F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txt_ID, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
@@ -159,7 +156,7 @@
             this.tableLayoutPanel1.Controls.Add(this.txt_ES, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.label4, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.txt_tax, 1, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(21, 74);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(59, 71);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.14815F));
@@ -172,14 +169,14 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(616, 55);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(532, 55);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // txt_tax
             // 
-            this.txt_tax.Location = new System.Drawing.Point(78, 29);
+            this.txt_tax.Location = new System.Drawing.Point(70, 29);
             this.txt_tax.Name = "txt_tax";
-            this.txt_tax.Size = new System.Drawing.Size(165, 21);
+            this.txt_tax.Size = new System.Drawing.Size(159, 21);
             this.txt_tax.TabIndex = 31;
             // 
             // btn_Execute
@@ -213,6 +210,7 @@
             this.Controls.Add(this.btn_Reset);
             this.Controls.Add(this.btn_Execute);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frm_SalaryAdd";
             this.Text = "新增工资记录";
             this.tableLayoutPanel1.ResumeLayout(false);
