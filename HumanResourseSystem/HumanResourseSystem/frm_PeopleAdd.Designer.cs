@@ -75,7 +75,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.55224F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.44776F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 287F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 288F));
             this.tableLayoutPanel1.Controls.Add(this.txt_Address, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 4);
@@ -146,7 +146,7 @@
             // 
             // txt_Phone
             // 
-            this.txt_Phone.Location = new System.Drawing.Point(331, 86);
+            this.txt_Phone.Location = new System.Drawing.Point(330, 86);
             this.txt_Phone.Name = "txt_Phone";
             this.txt_Phone.Size = new System.Drawing.Size(200, 21);
             this.txt_Phone.TabIndex = 34;
@@ -166,7 +166,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(254, 83);
+            this.label8.Location = new System.Drawing.Point(253, 83);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 26);
             this.label8.TabIndex = 25;
@@ -179,7 +179,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(254, 0);
+            this.label2.Location = new System.Drawing.Point(253, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 27);
             this.label2.TabIndex = 19;
@@ -188,7 +188,7 @@
             // 
             // txt_Name
             // 
-            this.txt_Name.Location = new System.Drawing.Point(331, 3);
+            this.txt_Name.Location = new System.Drawing.Point(330, 3);
             this.txt_Name.Name = "txt_Name";
             this.txt_Name.Size = new System.Drawing.Size(200, 21);
             this.txt_Name.TabIndex = 28;
@@ -222,7 +222,7 @@
             // 
             // txt_Age
             // 
-            this.txt_Age.Location = new System.Drawing.Point(331, 30);
+            this.txt_Age.Location = new System.Drawing.Point(330, 30);
             this.txt_Age.Name = "txt_Age";
             this.txt_Age.Size = new System.Drawing.Size(200, 21);
             this.txt_Age.TabIndex = 30;
@@ -234,7 +234,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(254, 56);
+            this.label6.Location = new System.Drawing.Point(253, 56);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(71, 27);
             this.label6.TabIndex = 23;
@@ -247,7 +247,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(254, 27);
+            this.label4.Location = new System.Drawing.Point(253, 27);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 29);
             this.label4.TabIndex = 21;
@@ -297,7 +297,7 @@
             // 
             // txt_Inworkdate
             // 
-            this.txt_Inworkdate.Location = new System.Drawing.Point(331, 59);
+            this.txt_Inworkdate.Location = new System.Drawing.Point(330, 59);
             this.txt_Inworkdate.Name = "txt_Inworkdate";
             this.txt_Inworkdate.Size = new System.Drawing.Size(200, 21);
             this.txt_Inworkdate.TabIndex = 32;

@@ -26,7 +26,7 @@ namespace HumanResourseSystem
             if (textBox1.Text != "") { condiction += "and Tax='" + textBox1.Text + "'"; }
             if (textBox2.Text != "") { condiction += "and ES='" + textBox2.Text + "'"; }
             strSql = "SELECT * FROM Salary WHERE 1=1 " + condiction;
-            frm_SalaryMgmt.ExecSQL();
+            frm_SalaryMgmt.frm_SM.ExecSQL();
             this.Close();
         }
 

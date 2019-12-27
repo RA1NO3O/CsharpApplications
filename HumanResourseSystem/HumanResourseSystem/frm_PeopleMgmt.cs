@@ -12,9 +12,11 @@ namespace HumanResourseSystem
 {
     public partial class frm_PeopleMgmt : Form
     {
+        public static frm_PeopleMgmt frm_PM;
         public frm_PeopleMgmt()
         {
             InitializeComponent();
+            frm_PM = this;
         }
         public static string Id { get => id; set => id = value; }
         public static string E_Name { get => e_name; set => e_name = value; }
@@ -56,10 +58,12 @@ namespace HumanResourseSystem
             hintBox.Text = "";
         }
 
-        private static void dgv_People_MouseEnter(object sender, EventArgs e)
+        private void dgv_People_MouseEnter(object sender, EventArgs e)
         {
-            if (frm_Login.permission.Equals("ReadOnly")){ frm_PeopleMgmt.hintBox.Text = "鉴于当前用户访问权限等级,这些数据是只读的,您没有权限修改它们."; }
-            else { frm_PeopleMgmt.hintBox.Text = "请注意,对表中内容的修改并不会影响到数据库.若要操作这些数据,请使用右下角的''添加'',''修改''和''删除''按钮."; }
+            if (frm_Login.permission.Equals("ReadOnly"))
+            { hintBox.Text = "鉴于当前用户访问权限等级,这些数据是只读的,您没有权限修改它们."; }
+            else 
+            { hintBox.Text = "请注意,对表中内容的修改并不会影响到数据库.若要操作这些数据,请改用右下角的''添加'',''修改''和''删除''按钮."; }
             
         }
 
@@ -149,7 +153,7 @@ namespace HumanResourseSystem
             frm_PeopleSearch S = new frm_PeopleSearch();
             S.ShowDialog();
         }
-        public static void ExecSQL()
+        public void ExecSQL()
         {
             DataConnector data = new DataConnector();
             DataSet ds;

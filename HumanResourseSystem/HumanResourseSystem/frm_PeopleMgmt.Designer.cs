@@ -34,10 +34,10 @@
             this.btn_Delete = new System.Windows.Forms.Button();
             this.btn_Reset = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            frm_PeopleMgmt.hintBox = new System.Windows.Forms.ToolStripStatusLabel();
-            frm_PeopleMgmt.dgv_People = new System.Windows.Forms.DataGridView();
+            this.hintBox = new System.Windows.Forms.ToolStripStatusLabel();
+            this.dgv_People = new System.Windows.Forms.DataGridView();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(frm_PeopleMgmt.dgv_People)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_People)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Search
@@ -111,7 +111,7 @@
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            frm_PeopleMgmt.hintBox});
+            this.hintBox});
             this.statusStrip1.Location = new System.Drawing.Point(0, 380);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(685, 22);
@@ -120,30 +120,30 @@
             // 
             // hintBox
             // 
-            frm_PeopleMgmt.hintBox.Name = "hintBox";
-            frm_PeopleMgmt.hintBox.Size = new System.Drawing.Size(32, 17);
-            frm_PeopleMgmt.hintBox.Text = "状态";
+            this.hintBox.Name = "hintBox";
+            this.hintBox.Size = new System.Drawing.Size(32, 17);
+            this.hintBox.Text = "状态";
             // 
             // dgv_People
             // 
-            frm_PeopleMgmt.dgv_People.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgv_People.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            frm_PeopleMgmt.dgv_People.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            frm_PeopleMgmt.dgv_People.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            frm_PeopleMgmt.dgv_People.Location = new System.Drawing.Point(12, 12);
-            frm_PeopleMgmt.dgv_People.Name = "dgv_People";
-            frm_PeopleMgmt.dgv_People.RowTemplate.Height = 23;
-            frm_PeopleMgmt.dgv_People.Size = new System.Drawing.Size(661, 336);
-            frm_PeopleMgmt.dgv_People.TabIndex = 7;
-            frm_PeopleMgmt.dgv_People.MouseEnter += new System.EventHandler(frm_PeopleMgmt.dgv_People_MouseEnter);
+            this.dgv_People.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgv_People.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_People.Location = new System.Drawing.Point(12, 12);
+            this.dgv_People.Name = "dgv_People";
+            this.dgv_People.RowTemplate.Height = 23;
+            this.dgv_People.Size = new System.Drawing.Size(661, 336);
+            this.dgv_People.TabIndex = 7;
+            this.dgv_People.MouseEnter += new System.EventHandler(this.dgv_People_MouseEnter);
             // 
             // frm_PeopleMgmt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(685, 402);
-            this.Controls.Add(frm_PeopleMgmt.dgv_People);
+            this.Controls.Add(this.dgv_People);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btn_Reset);
             this.Controls.Add(this.btn_Delete);
@@ -156,7 +156,7 @@
             this.Load += new System.EventHandler(this.frm_PeopleMgmt_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(frm_PeopleMgmt.dgv_People)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_People)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,7 +170,7 @@
         private System.Windows.Forms.Button btn_Delete;
         private System.Windows.Forms.Button btn_Reset;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private static System.Windows.Forms.ToolStripStatusLabel hintBox;
-        private static System.Windows.Forms.DataGridView dgv_People;
+        private System.Windows.Forms.ToolStripStatusLabel hintBox;
+        private System.Windows.Forms.DataGridView dgv_People;
     }
 }

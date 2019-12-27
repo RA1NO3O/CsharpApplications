@@ -12,9 +12,11 @@ namespace HumanResourseSystem
 {
     public partial class frm_SalaryMgmt : Form
     {
+        public static frm_SalaryMgmt frm_SM;
         public frm_SalaryMgmt()
         {
             InitializeComponent();
+            frm_SM = this;
         }
 
         public static string Id { get => id; set => id = value; }
@@ -95,7 +97,7 @@ namespace HumanResourseSystem
             frm_SalarySearch S = new frm_SalarySearch();
             S.ShowDialog();
         }
-        public static void ExecSQL()
+        public void ExecSQL()
         {
             DataConnector data = new DataConnector();
             DataSet ds;

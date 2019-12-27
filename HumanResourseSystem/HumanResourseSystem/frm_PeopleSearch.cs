@@ -47,7 +47,7 @@ namespace HumanResourseSystem
                 if (txt_Address.Text != "") { condition += "AND (E_Address LIKE '%" + txt_Address.Text + "%')"; }
                 strSql = "SELECT   E_ID AS 编号, E_Name AS 姓名, E_Sex AS 性别, E_Age AS 年龄, E_Birthday AS 出生日期, E_InworkDate AS 入职日期, E_Position AS 岗位, E_Phone AS 电话, E_Address AS 地址 FROM Employee WHERE   (1 = 1) " + condition;
             }
-            frm_PeopleMgmt.ExecSQL();
+            frm_PeopleMgmt.frm_PM.ExecSQL();
             this.Close();
 
         }

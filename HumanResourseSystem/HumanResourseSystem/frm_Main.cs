@@ -19,14 +19,9 @@ namespace HumanResourseSystem
             InitializeComponent();
         }
 
-        private void frm_Main_FormClosed(object sender, FormClosedEventArgs e)
-        {       //窗体关闭后事件
-            Application.Exit();
-        }
-
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            frm_Main_FormClosing(sender , new FormClosingEventArgs(CloseReason.UserClosing,false));
         }
 
         private void 人员档案管理ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -53,15 +48,11 @@ namespace HumanResourseSystem
             hintbox.Text = "";
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ms_QuickAdd.Show(MousePosition);
-        }
-
         private void frm_Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             if(MessageBox.Show("你确定要退出吗?", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)== System.Windows.Forms.DialogResult.Yes)
             {
+                this.Dispose();
                 Application.Exit();
             }
             else
@@ -124,6 +115,13 @@ namespace HumanResourseSystem
             hintbox.Text = "欢迎,"+frm_Login.username+".  您的管理权限:"+frm_Login.permission;
             this.Text = "人事工资管理系统  " + "  当前用户:" + frm_Login.username + "  登录时间:" + DateTime.Now;
             if (frm_Login.permission.Equals("ReadOnly")) { 数据库管理TToolStripMenuItem.Enabled = false; }
+
+            string strSql = "SELECT   P_Value FROM(SELECT   P_Key, P_Value, P_Username FROM Preferences WHERE(P_Username = '" + frm_Login.username + "')) derivedtbl_1 WHERE(P_Key = 'form_opacity')";
+            DataConnector data = new DataConnector();
+            DataSet ds;
+            data.dataCon();
+            ds = data.getDataset(strSql);
+            this.Opacity = (Double) Convert.ToInt32(ds.Tables[0].Rows[0][0]) / 100 ;
         }
 
         private void 退出ToolStripMenuItem_MouseEnter(object sender, EventArgs e)
@@ -175,6 +173,11 @@ namespace HumanResourseSystem
         {
             frm_Preferences p = new frm_Preferences();
             p.ShowDialog();
+        }
+
+        private void btn_QuickAdd_Click(object sender, EventArgs e)
+        {
+            ms_QuickAdd.Show(MousePosition);
         }
     }
 }
