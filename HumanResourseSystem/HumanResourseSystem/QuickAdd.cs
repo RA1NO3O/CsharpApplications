@@ -16,5 +16,22 @@ namespace HumanResourseSystem
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ms_QuickAdd.Show(MousePosition);
+        }
+
+        private void 添加人员档案ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_PeopleAdd pa = new frm_PeopleAdd();
+            pa.ShowDialog();
+        }
+
+        private void 添加工资记录ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_SalaryAdd sa = new frm_SalaryAdd();
+            sa.ShowDialog();
+        }
     }
 }

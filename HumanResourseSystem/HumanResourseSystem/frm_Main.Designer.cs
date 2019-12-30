@@ -49,9 +49,13 @@
             this.添加人员档案ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.添加工资记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_QuickAdd = new System.Windows.Forms.Button();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.menuBar.SuspendLayout();
             this.statusBar.SuspendLayout();
             this.ms_QuickAdd.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuBar
@@ -162,25 +166,27 @@
             // 
             this.帮助目录MToolStripMenuItem.Enabled = false;
             this.帮助目录MToolStripMenuItem.Name = "帮助目录MToolStripMenuItem";
-            this.帮助目录MToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.帮助目录MToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.帮助目录MToolStripMenuItem.Text = "帮助目录(&M)";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(150, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // 系统信息SToolStripMenuItem
             // 
             this.系统信息SToolStripMenuItem.Name = "系统信息SToolStripMenuItem";
-            this.系统信息SToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.系统信息SToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.系统信息SToolStripMenuItem.Text = "系统信息 ... (&I)";
             this.系统信息SToolStripMenuItem.Click += new System.EventHandler(this.系统信息SToolStripMenuItem_Click);
+            this.系统信息SToolStripMenuItem.MouseEnter += new System.EventHandler(this.系统信息SToolStripMenuItem_MouseEnter);
+            this.系统信息SToolStripMenuItem.MouseLeave += new System.EventHandler(this.Items_MouseLeave);
             // 
             // 关于AToolStripMenuItem1
             // 
             this.关于AToolStripMenuItem1.Name = "关于AToolStripMenuItem1";
-            this.关于AToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.关于AToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.关于AToolStripMenuItem1.Text = "关于... (&A)";
             this.关于AToolStripMenuItem1.Click += new System.EventHandler(this.关于AToolStripMenuItem1_Click);
             this.关于AToolStripMenuItem1.MouseEnter += new System.EventHandler(this.关于AToolStripMenuItem1_MouseEnter);
@@ -208,7 +214,7 @@
             this.添加人员档案ToolStripMenuItem,
             this.添加工资记录ToolStripMenuItem});
             this.ms_QuickAdd.Name = "ms_QuickAdd";
-            this.ms_QuickAdd.Size = new System.Drawing.Size(193, 70);
+            this.ms_QuickAdd.Size = new System.Drawing.Size(193, 48);
             // 
             // 添加人员档案ToolStripMenuItem
             // 
@@ -236,18 +242,50 @@
             this.btn_QuickAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_QuickAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_QuickAdd.Font = new System.Drawing.Font("微软雅黑", 25F);
-            this.btn_QuickAdd.Location = new System.Drawing.Point(1197, 594);
+            this.btn_QuickAdd.Location = new System.Drawing.Point(1197, 614);
             this.btn_QuickAdd.Name = "btn_QuickAdd";
             this.btn_QuickAdd.Size = new System.Drawing.Size(55, 55);
             this.btn_QuickAdd.TabIndex = 6;
             this.btn_QuickAdd.UseVisualStyleBackColor = false;
             this.btn_QuickAdd.Click += new System.EventHandler(this.btn_QuickAdd_Click);
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripButton2});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 25);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1264, 25);
+            this.toolStrip1.TabIndex = 8;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::HumanResourseSystem.Properties.Resources.student;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = global::HumanResourseSystem.Properties.Resources.score;
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton2.Text = "toolStripButton2";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
+            // 
             // frm_Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.btn_QuickAdd);
             this.Controls.Add(this.statusBar);
             this.Controls.Add(this.menuBar);
@@ -264,6 +302,8 @@
             this.statusBar.ResumeLayout(false);
             this.statusBar.PerformLayout();
             this.ms_QuickAdd.ResumeLayout(false);
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,5 +331,8 @@
         private System.Windows.Forms.ToolStripMenuItem 偏好设置ToolStripMenuItem;
         private System.Windows.Forms.Button btn_QuickAdd;
         public System.Windows.Forms.StatusStrip statusBar;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
     }
 }

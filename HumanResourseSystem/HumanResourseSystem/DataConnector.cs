@@ -45,7 +45,7 @@ namespace HumanResourseSystem
             }
             catch
             {
-                MessageBox.Show("数据库未连接");
+                MessageBox.Show("数据库未连接","错误",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
 
             try
@@ -56,7 +56,7 @@ namespace HumanResourseSystem
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "提示");
+                MessageBox.Show(ex.Message, "提示",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 return false;
             }
             finally

@@ -14,9 +14,11 @@ namespace HumanResourseSystem
 {
     public partial class frm_Main : Form
     {
+        public static frm_Main frm_M;
         public frm_Main()
         {
             InitializeComponent();
+            frm_M = this;
         }
 
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -117,11 +119,33 @@ namespace HumanResourseSystem
             if (frm_Login.permission.Equals("ReadOnly")) { 数据库管理TToolStripMenuItem.Enabled = false; }
 
             string strSql = "SELECT   P_Value FROM(SELECT   P_Key, P_Value, P_Username FROM Preferences WHERE(P_Username = '" + frm_Login.username + "')) derivedtbl_1 WHERE(P_Key = 'form_opacity')";
-            DataConnector data = new DataConnector();
-            DataSet ds;
-            data.dataCon();
-            ds = data.getDataset(strSql);
-            this.Opacity = (Double) Convert.ToInt32(ds.Tables[0].Rows[0][0]) / 100 ;
+            this.Opacity = (Double) Convert.ToInt32(doSQL(strSql).Tables[0].Rows[0][0]) / 100 ;
+
+            strSql = "SELECT P_Value FROM(SELECT P_Key , P_Value , P_Username FROM Preferences WHERE(P_Username = '" + frm_Login.username + "')) WHERE(P_Key='form_state')";
+            switch (doSQL(strSql).Tables[0].Rows[0][0].ToString())
+            {
+                case "normal":
+                    this.WindowState = FormWindowState.Normal;
+                    break;
+                case "maximized":
+                    this.WindowState = FormWindowState.Maximized;
+                    break;
+                case "minimized":
+                    this.WindowState = FormWindowState.Minimized;
+                    break;
+            }
+
+            strSql = "SELECT P_Value FROM(SELECT P_Key , P_Value , P_Username FROM Preferences WHERE(P_Username = '" + frm_Login.username + "')) WHERE(P_Key='form_statusbar')";
+            if (doSQL(strSql).Tables[0].Rows[0][0].ToString().Equals("show"))
+            {
+                this.statusBar.Visible = true;
+            }
+            else if (doSQL(strSql).Tables[0].Rows[0][0].ToString().Equals("hide"))
+            {
+                this.statusBar.Visible = false;
+            }
+
+            form_Refresh();
         }
 
         private void 退出ToolStripMenuItem_MouseEnter(object sender, EventArgs e)
@@ -178,6 +202,47 @@ namespace HumanResourseSystem
         private void btn_QuickAdd_Click(object sender, EventArgs e)
         {
             ms_QuickAdd.Show(MousePosition);
+        }
+
+        private void 系统信息SToolStripMenuItem_MouseEnter(object sender, EventArgs e)
+        {
+            hintbox.Text = "显示有关当前操作系统的信息.";
+        }
+    
+        private DataSet doSQL(string strSql)
+        {
+            DataConnector data = new DataConnector();
+            DataSet ds;
+            data.dataCon();
+            return ds = data.getDataset(strSql);
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            人员档案管理ToolStripMenuItem_Click(sender ,e);
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            人员工资管理SToolStripMenuItem_Click(sender, e);
+        }
+        public void form_Refresh()
+        {
+            string strSql = "SELECT P_Value FROM(SELECT P_Key , P_Value , P_Username FROM Preferences WHERE(P_Username = '" + frm_Login.username + "')) WHERE(P_Key='btn_QuickAdd')";
+            switch (doSQL(strSql).Tables[0].Rows[0][0].ToString())
+            {
+                case "include":
+                    btn_QuickAdd.Visible = true;
+                    break;
+                case "float":
+                    btn_QuickAdd.Visible = false;
+                    QuickAdd btn_QA = new QuickAdd();
+                    btn_QA.Show();
+                    break;
+                case "hide":
+                    btn_QuickAdd.Visible = false;
+                    break;
+            }
         }
     }
 }
