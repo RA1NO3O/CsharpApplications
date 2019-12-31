@@ -152,22 +152,6 @@ namespace HumanResourseSystem
         {
             btn_Apply.Enabled = true;
         }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            switch (((RadioButton)sender).Name)
-            {
-                case "radioButton1":
-                    qa_state = 1;
-                    break;
-                case "radioButton2":
-                    qa_state = 2;
-                    break;
-                case "radioButton3":
-                    qa_state = 3;
-                    break;
-            }
-        }
         public DataSet doSQL(string strSql)
         {
             DataConnector data = new DataConnector();

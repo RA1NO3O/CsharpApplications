@@ -12,6 +12,7 @@ namespace HumanResourseSystem
 {
     public partial class frm_Login : Form
     {
+        private Boolean showpwd=false;
         public static string username, password, permission;
         public frm_Login()
         {
@@ -51,6 +52,18 @@ namespace HumanResourseSystem
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (!showpwd) { txt_Password.PasswordChar =default(char);button1.Text = "隐藏";showpwd = true; }
+            else if (showpwd) { txt_Password.PasswordChar = '•';button1.Text = "显示"; showpwd = false; }
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            txt_Username.Text = "";
+        }
+
         private void frmLogin_KeyDown(object sender, KeyEventArgs e)
         {       //按下键事件
             label2.Text = "最后的按键值:"+e.KeyValue.ToString();
@@ -58,9 +71,6 @@ namespace HumanResourseSystem
             if (e.KeyValue == 27) { Application.Exit(); }
         }
 
-        private void frm_Login_Load(object sender, EventArgs e)
-        {   //初始化 
-            label2.Text = "";
-        }
+        private void frm_Login_Load(object sender, EventArgs e) => label2.Text = "";
     }
 }

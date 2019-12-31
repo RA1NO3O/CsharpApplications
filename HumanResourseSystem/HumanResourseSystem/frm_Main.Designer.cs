@@ -166,18 +166,18 @@
             // 
             this.帮助目录MToolStripMenuItem.Enabled = false;
             this.帮助目录MToolStripMenuItem.Name = "帮助目录MToolStripMenuItem";
-            this.帮助目录MToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.帮助目录MToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.帮助目录MToolStripMenuItem.Text = "帮助目录(&M)";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(150, 6);
             // 
             // 系统信息SToolStripMenuItem
             // 
             this.系统信息SToolStripMenuItem.Name = "系统信息SToolStripMenuItem";
-            this.系统信息SToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.系统信息SToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.系统信息SToolStripMenuItem.Text = "系统信息 ... (&I)";
             this.系统信息SToolStripMenuItem.Click += new System.EventHandler(this.系统信息SToolStripMenuItem_Click);
             this.系统信息SToolStripMenuItem.MouseEnter += new System.EventHandler(this.系统信息SToolStripMenuItem_MouseEnter);
@@ -186,7 +186,7 @@
             // 关于AToolStripMenuItem1
             // 
             this.关于AToolStripMenuItem1.Name = "关于AToolStripMenuItem1";
-            this.关于AToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.关于AToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
             this.关于AToolStripMenuItem1.Text = "关于... (&A)";
             this.关于AToolStripMenuItem1.Click += new System.EventHandler(this.关于AToolStripMenuItem1_Click);
             this.关于AToolStripMenuItem1.MouseEnter += new System.EventHandler(this.关于AToolStripMenuItem1_MouseEnter);

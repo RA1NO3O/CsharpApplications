@@ -105,7 +105,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(258, 0);
+            this.label2.Location = new System.Drawing.Point(257, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 26);
             this.label2.TabIndex = 19;
@@ -114,7 +114,7 @@
             // 
             // txt_BS
             // 
-            this.txt_BS.Location = new System.Drawing.Point(335, 3);
+            this.txt_BS.Location = new System.Drawing.Point(334, 3);
             this.txt_BS.Name = "txt_BS";
             this.txt_BS.Size = new System.Drawing.Size(200, 21);
             this.txt_BS.TabIndex = 28;
@@ -134,7 +134,7 @@
             // 
             // txt_ES
             // 
-            this.txt_ES.Location = new System.Drawing.Point(335, 29);
+            this.txt_ES.Location = new System.Drawing.Point(334, 29);
             this.txt_ES.Name = "txt_ES";
             this.txt_ES.Size = new System.Drawing.Size(200, 21);
             this.txt_ES.TabIndex = 30;
@@ -145,7 +145,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(258, 26);
+            this.label4.Location = new System.Drawing.Point(257, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 29);
             this.label4.TabIndex = 21;
@@ -162,7 +162,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.55224F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.44776F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 283F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 284F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txt_ID, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);

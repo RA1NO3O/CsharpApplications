@@ -125,13 +125,13 @@ namespace HumanResourseSystem
             switch (doSQL(strSql).Tables[0].Rows[0][0].ToString())
             {
                 case "normal":
-                    this.WindowState = FormWindowState.Normal;
+                    this.WindowState = System.Windows.Forms.FormWindowState.Normal;
                     break;
                 case "maximized":
-                    this.WindowState = FormWindowState.Maximized;
+                    this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
                     break;
                 case "minimized":
-                    this.WindowState = FormWindowState.Minimized;
+                    this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
                     break;
             }
 
