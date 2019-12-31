@@ -98,6 +98,7 @@
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(165, 21);
             this.txt_ID.TabIndex = 27;
+            this.txt_ID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_BS_KeyDown);
             // 
             // label2
             // 
@@ -105,7 +106,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(257, 0);
+            this.label2.Location = new System.Drawing.Point(256, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 26);
             this.label2.TabIndex = 19;
@@ -114,10 +115,11 @@
             // 
             // txt_BS
             // 
-            this.txt_BS.Location = new System.Drawing.Point(334, 3);
+            this.txt_BS.Location = new System.Drawing.Point(333, 3);
             this.txt_BS.Name = "txt_BS";
             this.txt_BS.Size = new System.Drawing.Size(200, 21);
             this.txt_BS.TabIndex = 28;
+            this.txt_BS.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_BS_KeyDown);
             // 
             // label3
             // 
@@ -134,10 +136,11 @@
             // 
             // txt_ES
             // 
-            this.txt_ES.Location = new System.Drawing.Point(334, 29);
+            this.txt_ES.Location = new System.Drawing.Point(333, 29);
             this.txt_ES.Name = "txt_ES";
             this.txt_ES.Size = new System.Drawing.Size(200, 21);
             this.txt_ES.TabIndex = 30;
+            this.txt_ES.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_BS_KeyDown);
             // 
             // label4
             // 
@@ -145,7 +148,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(257, 26);
+            this.label4.Location = new System.Drawing.Point(256, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 29);
             this.label4.TabIndex = 21;
@@ -162,7 +165,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.55224F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.44776F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 284F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 285F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txt_ID, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
@@ -193,6 +196,7 @@
             this.txt_tax.Name = "txt_tax";
             this.txt_tax.Size = new System.Drawing.Size(165, 21);
             this.txt_tax.TabIndex = 31;
+            this.txt_tax.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_BS_KeyDown);
             // 
             // groupBox1
             // 
@@ -218,6 +222,7 @@
             this.Name = "frm_SalaryEdit";
             this.Text = "修改工资信息";
             this.Load += new System.EventHandler(this.frm_SalaryEdit_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_BS_KeyDown);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -232,7 +237,6 @@
         private System.Windows.Forms.Button btn_Reset;
         private System.Windows.Forms.Button btn_Execute;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_ID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_BS;
         private System.Windows.Forms.Label label3;
@@ -241,5 +245,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TextBox txt_tax;
         private System.Windows.Forms.GroupBox groupBox1;
+        public System.Windows.Forms.TextBox txt_ID;
     }
 }

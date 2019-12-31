@@ -116,6 +116,7 @@ namespace HumanResourseSystem
             frm_PeopleMgmt.address = dgv_People.CurrentRow.Cells[8].Value.ToString();
             frm_PeopleEdit E = new frm_PeopleEdit();
             E.ShowDialog();
+            E.txt_ID.Enabled = false;
             refresh();
         }
         private void refresh()

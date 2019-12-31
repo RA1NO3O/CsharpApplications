@@ -171,6 +171,6 @@
         private System.Windows.Forms.Button btn_Reset;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel hintBox;
-        private System.Windows.Forms.DataGridView dgv_People;
+        public System.Windows.Forms.DataGridView dgv_People;
     }
 }

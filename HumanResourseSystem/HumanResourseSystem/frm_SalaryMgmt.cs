@@ -78,6 +78,8 @@ namespace HumanResourseSystem
             es = dgv_Salary.CurrentRow.Cells[3].Value.ToString();
             frm_SalaryEdit E = new frm_SalaryEdit();
             E.ShowDialog();
+            E.txt_ID.Enabled = false;
+            refresh();
         }
 
         private void btn_Add_Click(object sender, EventArgs e)

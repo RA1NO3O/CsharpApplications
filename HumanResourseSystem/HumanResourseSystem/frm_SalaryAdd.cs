@@ -23,7 +23,7 @@ namespace HumanResourseSystem
             {
                 string strSql;
                 DataConnector data = new DataConnector();
-                strSql = "insert into Employee ( ID , BS , Tax , ES ) values('" + txt_ID.Text + "','" + txt_BS.Text + "','" + txt_tax.Text + "','" + txt_ES.Text + "')";
+                strSql = "insert into Salary ( ID , BS , Tax , ES ) values('" + txt_ID.Text + "','" + txt_BS.Text + "','" + txt_tax.Text + "','" + txt_ES.Text + "')";
                 data.dataCon();
                 if (data.sqlExec(strSql))
                 {
