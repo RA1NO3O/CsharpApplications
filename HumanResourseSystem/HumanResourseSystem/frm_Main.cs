@@ -42,7 +42,7 @@ namespace HumanResourseSystem
 
         private void 数据库管理TToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start(System.IO.Directory.GetCurrentDirectory()+"\\Resources\\HR.accdb");
+            Process.Start(System.IO.Directory.GetCurrentDirectory()+"\\Resources\\HR.accdb");
         }
 
         private void Items_MouseLeave(object sender, EventArgs e)
