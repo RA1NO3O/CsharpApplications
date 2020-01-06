@@ -19,7 +19,7 @@ namespace HumanResourseSystem
 
         private void btn_Execute_Click(object sender, EventArgs e)
         {
-            if (txt_ID.Text != "" && txt_Name.Text != "" && txt_Sex.Text != "" && txt_Birthday.Text != "" && txt_Inworkdate.Text != "")
+            if (txt_ID.Text.Length == 0 && txt_Name.Text.Length == 0 && txt_Sex.Text.Length == 0 && txt_Birthday.Text.Length == 0 && txt_Inworkdate.Text.Length == 0)
             {
                 string strSql;
                 DataConnector data = new DataConnector();

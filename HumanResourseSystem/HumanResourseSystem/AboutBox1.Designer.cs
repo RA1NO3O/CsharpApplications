@@ -137,8 +137,9 @@
             this.textBoxDescription.Size = new System.Drawing.Size(271, 116);
             this.textBoxDescription.TabIndex = 23;
             this.textBoxDescription.TabStop = false;
-            this.textBoxDescription.Text = "编译日期:2019/12/21 17:28:18\r\n开发者:RA1N\r\n开发人员网站:\r\nhttp://github.com/RA1NN1AR\r\n项目网站:\r\nh" +
-    "ttp://github.com/RA1NN1AR/CsharpApplications/HumanResourceSystem";
+            this.textBoxDescription.Text = "创建日期:2019/12/21 17:28:18\r\n最后编译日期:2020/1/7 0:23:10\r\n开发者:RA1N\r\n开发人员网站:\r\nhttp://gith" +
+    "ub.com/RA1NN1AR\r\n项目网站:\r\nhttp://github.com/RA1NN1AR/CsharpApplications/HumanResou" +
+    "rceSystem";
             // 
             // okButton
             // 
