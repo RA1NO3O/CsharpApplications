@@ -23,17 +23,17 @@ namespace HumanResourseSystem
             string condiction = "";
             if (chk_LIKEMODE.Checked == false) 
             {
-                if (txt_ID.Text != "") { condiction += "and ID='" + txt_ID.Text + "'"; }
-                if (txt_BasicSalary.Text != "") { condiction += "and BS='" + txt_ID.Text + "'"; }
-                if (textBox1.Text != "") { condiction += "and Tax='" + textBox1.Text + "'"; }
-                if (textBox2.Text != "") { condiction += "and ES='" + textBox2.Text + "'"; }
+                if (txt_ID.Text.Length == 0) { condiction += "and ID='" + txt_ID.Text + "'"; }
+                if (txt_BasicSalary.Text.Length == 0) { condiction += "and BS='" + txt_ID.Text + "'"; }
+                if (textBox1.Text.Length == 0) { condiction += "and Tax='" + textBox1.Text + "'"; }
+                if (textBox2.Text.Length == 0) { condiction += "and ES='" + textBox2.Text + "'"; }
             }
             else
             {
-                if (txt_ID.Text != "") { condiction += "and ID LIKE '%" + txt_ID.Text + "%'"; }
-                if (txt_BasicSalary.Text != "") { condiction += "and BS LIKE '%" + txt_ID.Text + "%'"; }
-                if (textBox1.Text != "") { condiction += "and Tax LIKE '%" + textBox1.Text + "%'"; }
-                if (textBox2.Text != "") { condiction += "and ES LIKE '%" + textBox2.Text + "%'"; }
+                if (txt_ID.Text.Length == 0) { condiction += "and ID LIKE '%" + txt_ID.Text + "%'"; }
+                if (txt_BasicSalary.Text.Length == 0) { condiction += "and BS LIKE '%" + txt_ID.Text + "%'"; }
+                if (textBox1.Text.Length == 0) { condiction += "and Tax LIKE '%" + textBox1.Text + "%'"; }
+                if (textBox2.Text.Length == 0) { condiction += "and ES LIKE '%" + textBox2.Text + "%'"; }
             }
             strSql = "SELECT ID AS  编号 , BS AS 基本工资 , Tax AS 应缴税 , ES AS 实发工资 FROM Salary WHERE 1=1 " + condiction;
             frm_SalaryMgmt.frm_SM.ExecSQL();
