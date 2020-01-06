@@ -111,19 +111,20 @@ namespace HumanResourseSystem
             if (chk_statusBar.Checked) { strSql= "UPDATE Preferences SET P_Value = 'show' WHERE P_Key = 'form_statusbar' AND P_Username = '" + frm_Login.username + "'"; } else { strSql= "UPDATE Preferences SET P_Value = 'hide' WHERE P_Key = 'form_statusbar' AND P_Username = '" + frm_Login.username + "'"; }
             ds = data.getDataset(strSql);
 
-            switch (qa_state)
+            switch (qa_state)   //处理此处的变量
             {
                 case 1:
-                    strSql = "UPDATE Preferences SET P_Value = 'include' WHERE P_KEY='btn_QuickAdd' AND P_Username = '" + frm_Login.username + "'";
+                    strSql = "UPDATE Preferences SET P_Value = 'include' WHERE P_KEY= 'btn_QuickAdd' AND P_Username = '" + frm_Login.username + "'";
                     break;
                 case 2:
-                    strSql = "UPDATE Preferences SET P_Value = 'float' WHERE P_KEY='btn_QuickAdd' AND P_Username = '" + frm_Login.username + "'";
+                    strSql = "UPDATE Preferences SET P_Value = 'float' WHERE P_KEY= 'btn_QuickAdd' AND P_Username = '" + frm_Login.username + "'";
                     break;
                 case 3:
-                    strSql = "UPDATE Preferences SET P_Value = 'hide' WHERE P_KEY='btn_QuickAdd' AND P_Username = '" + frm_Login.username + "'";
+                    strSql = "UPDATE Preferences SET P_Value = 'hide' WHERE P_KEY= 'btn_QuickAdd' AND P_Username = '" + frm_Login.username + "'";
                     break;
             }
             ds = data.getDataset(strSql);
+            frm_Main.ActiveForm.Refresh();
 
             switch (wstate)
             {
@@ -162,6 +163,14 @@ namespace HumanResourseSystem
         private void Error_PropertyValue(string context)
         {
             MessageBox.Show(context+"\r\n请单击确定按钮,以重新写入正确的属性!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void rdo_qastate_Changed(object sender, EventArgs e)
+        {
+            if (sender.Equals(radioButton1)) { qa_state = 1; }
+            if (sender.Equals(radioButton2)) { qa_state = 2; }
+            if (sender.Equals(radioButton3)) { qa_state = 3; }
+            Property_Changed(sender,e);
         }
     }
 }

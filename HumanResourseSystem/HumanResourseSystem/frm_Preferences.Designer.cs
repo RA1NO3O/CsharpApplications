@@ -228,7 +228,7 @@
             this.radioButton3.TabIndex = 4;
             this.radioButton3.Text = "隐藏(&H)";
             this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.Property_Changed);
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.rdo_qastate_Changed);
             // 
             // radioButton2
             // 
@@ -239,7 +239,7 @@
             this.radioButton2.TabIndex = 3;
             this.radioButton2.Text = "浮动(&F)";
             this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.Property_Changed);
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.rdo_qastate_Changed);
             // 
             // radioButton1
             // 
@@ -252,7 +252,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "内嵌(&I)";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.Property_Changed);
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.rdo_qastate_Changed);
             // 
             // label4
             // 

@@ -56,7 +56,7 @@
             this.添加人员档案ToolStripMenuItem,
             this.添加工资记录ToolStripMenuItem});
             this.ms_QuickAdd.Name = "ms_QuickAdd";
-            this.ms_QuickAdd.Size = new System.Drawing.Size(193, 70);
+            this.ms_QuickAdd.Size = new System.Drawing.Size(193, 48);
             // 
             // 添加人员档案ToolStripMenuItem
             // 
@@ -86,8 +86,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "QuickAdd";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.QuickAdd_FormClosed);
             this.ms_QuickAdd.ResumeLayout(false);
             this.ResumeLayout(false);
 

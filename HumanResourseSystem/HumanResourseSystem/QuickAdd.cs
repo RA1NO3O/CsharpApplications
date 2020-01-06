@@ -33,5 +33,14 @@ namespace HumanResourseSystem
             frm_SalaryAdd sa = new frm_SalaryAdd();
             sa.ShowDialog();
         }
+
+        private void QuickAdd_FormClosed(object sender, FormClosedEventArgs e)
+        {   //浮动工具窗口关闭后,修改数据库中的按钮状态属性.
+            DataConnector data = new DataConnector();
+            DataSet ds;
+            data.dataCon();
+           string strSql = "UPDATE Preferences SET P_Value = 'hide' WHERE P_KEY='btn_QuickAdd' AND P_Username = '" + frm_Login.username + "'";
+            ds = data.getDataset(strSql);
+        }
     }
 }

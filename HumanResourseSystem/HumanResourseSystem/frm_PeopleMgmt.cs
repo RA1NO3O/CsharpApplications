@@ -27,6 +27,7 @@ namespace HumanResourseSystem
         public static string Position { get => position; set => position = value; }
         public static string Phone { get => phone; set => phone = value; }
         public static string Address { get => address; set => address = value; }
+
         private static string address;
         private static string phone;
         private static string position;
@@ -152,6 +153,7 @@ namespace HumanResourseSystem
         private void btn_Search_Click(object sender, EventArgs e)
         {
             frm_PeopleSearch S = new frm_PeopleSearch();
+
             S.ShowDialog();
         }
         public void ExecSQL()
