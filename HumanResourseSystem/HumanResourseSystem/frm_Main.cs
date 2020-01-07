@@ -113,7 +113,7 @@ namespace HumanResourseSystem
         }
 
         private void frm_Main_Load(object sender, EventArgs e)
-        {
+        {   //初始化窗体
             hintbox.Text = "欢迎,"+frm_Login.username+".  您的管理权限:"+frm_Login.permission;
             this.Text = "人事工资管理系统  " + "  当前用户:" + frm_Login.username + "  登录时间:" + DateTime.Now;
             if (frm_Login.permission.Equals("ReadOnly")) { 数据库管理TToolStripMenuItem.Enabled = false; }

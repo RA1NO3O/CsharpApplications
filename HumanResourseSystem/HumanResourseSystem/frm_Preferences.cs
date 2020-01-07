@@ -142,6 +142,7 @@ namespace HumanResourseSystem
 
             btn_Apply.Enabled = false;
             frm_Main.frm_M.form_Refresh();
+            //调用方法调整按钮状态
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)

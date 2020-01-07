@@ -12,6 +12,7 @@ namespace HumanResourseSystem
 {
     public partial class QuickAdd : Form
     {
+        public static QuickAdd qa;
         public QuickAdd()
         {
             InitializeComponent();
@@ -41,6 +42,18 @@ namespace HumanResourseSystem
             data.dataCon();
            string strSql = "UPDATE Preferences SET P_Value = 'hide' WHERE P_KEY='btn_QuickAdd' AND P_Username = '" + frm_Login.username + "'";
             ds = data.getDataset(strSql);
+        }
+        public void check_state()
+        {
+            DataConnector data = new DataConnector();
+            DataSet ds;
+            data.dataCon();
+            string strSql = "SELECT P_Value FROM(SELECT P_Key , P_Value , P_Username FROM Preferences WHERE(P_Username = '" + frm_Login.username + "')) WHERE(P_Key='btn_QuickAdd')";
+            ds = data.getDataset(strSql);
+            if (ds.Tables[0].Rows[0][0].ToString().Equals("hide")|| ds.Tables[0].Rows[0][0].ToString().Equals("include"))
+            {
+                this.Close();
+            }
         }
     }
 }

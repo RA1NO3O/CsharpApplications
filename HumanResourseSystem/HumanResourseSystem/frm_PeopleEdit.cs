@@ -23,7 +23,7 @@ namespace HumanResourseSystem
         }
 
         private void frm_PeopleEdit_Load(object sender, EventArgs e)
-        {
+        {   //从frm_PeopleMgmt获取数据
             txt_ID.Text = frm_PeopleMgmt.Id;
             txt_Name.Text = frm_PeopleMgmt.E_Name;
             txt_Sex.Text = frm_PeopleMgmt.Sex;
@@ -60,7 +60,7 @@ namespace HumanResourseSystem
         }
 
         private void frm_PeopleEdit_KeyDown(object sender, KeyEventArgs e)
-        {
+        {   //用户按下Esc键
             if (e.KeyValue == 27) { this.Close(); }
         }
     }

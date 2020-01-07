@@ -19,7 +19,7 @@ namespace HumanResourseSystem
 
         private void btn_Execute_Click(object sender, EventArgs e)
         {
-            if (txt_ID.Text.Length == 0 && txt_Name.Text.Length == 0 && txt_Sex.Text.Length == 0 && txt_Birthday.Text.Length == 0 && txt_Inworkdate.Text.Length == 0)
+            if (txt_ID.Text.Length != 0 && txt_Name.Text.Length != 0 && txt_Sex.Text.Length != 0 && txt_Birthday.Text.Length != 0 && txt_Inworkdate.Text.Length != 0)
             {
                 string strSql;
                 DataConnector data = new DataConnector();
@@ -47,7 +47,7 @@ namespace HumanResourseSystem
         }
 
         private void frm_PeopleAdd_KeyDown(object sender, KeyEventArgs e)
-        {
+        {   //当用户按下Esc键
             if (e.KeyValue == 27) { this.Close(); }
         }
     }

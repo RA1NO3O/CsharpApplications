@@ -31,7 +31,7 @@ namespace HumanResourseSystem
                 if (attributes.Length > 0)
                 {
                     AssemblyTitleAttribute titleAttribute = (AssemblyTitleAttribute)attributes[0];
-                    if (titleAttribute.Title.Length == 0)
+                    if (titleAttribute.Title.Length != 0)
                     {
                         return titleAttribute.Title;
                     }
@@ -52,7 +52,7 @@ namespace HumanResourseSystem
             get
             {
                 object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyProductAttribute), false);
-                if (attributes.Length == 0)
+                if (attributes.Length != 0)
                 {
                     return "";
                 }
@@ -65,7 +65,7 @@ namespace HumanResourseSystem
             get
             {
                 object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyCopyrightAttribute), false);
-                if (attributes.Length == 0)
+                if (attributes.Length != 0)
                 {
                     return "";
                 }
@@ -78,7 +78,7 @@ namespace HumanResourseSystem
             get
             {
                 object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyCompanyAttribute), false);
-                if (attributes.Length == 0)
+                if (attributes.Length != 0)
                 {
                     return "";
                 }

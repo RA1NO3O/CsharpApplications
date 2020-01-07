@@ -91,6 +91,7 @@
             this.label2.Size = new System.Drawing.Size(77, 12);
             this.label2.TabIndex = 4;
             this.label2.Text = "/Nowpressing";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 

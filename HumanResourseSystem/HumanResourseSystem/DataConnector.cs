@@ -56,7 +56,7 @@ namespace HumanResourseSystem
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "提示",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show(ex.Message, "提示",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
                 return false;
             }
             finally
