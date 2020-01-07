@@ -87,14 +87,14 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 26);
+            this.label1.Size = new System.Drawing.Size(68, 26);
             this.label1.TabIndex = 18;
             this.label1.Text = "编号*";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txt_ID
             // 
-            this.txt_ID.Location = new System.Drawing.Point(78, 3);
+            this.txt_ID.Location = new System.Drawing.Point(77, 3);
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(165, 21);
             this.txt_ID.TabIndex = 27;
@@ -106,7 +106,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(256, 0);
+            this.label2.Location = new System.Drawing.Point(255, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 26);
             this.label2.TabIndex = 19;
@@ -115,7 +115,7 @@
             // 
             // txt_BS
             // 
-            this.txt_BS.Location = new System.Drawing.Point(333, 3);
+            this.txt_BS.Location = new System.Drawing.Point(332, 3);
             this.txt_BS.Name = "txt_BS";
             this.txt_BS.Size = new System.Drawing.Size(200, 21);
             this.txt_BS.TabIndex = 28;
@@ -129,14 +129,14 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 26);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 29);
+            this.label3.Size = new System.Drawing.Size(68, 29);
             this.label3.TabIndex = 20;
             this.label3.Text = "应缴税";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txt_ES
             // 
-            this.txt_ES.Location = new System.Drawing.Point(333, 29);
+            this.txt_ES.Location = new System.Drawing.Point(332, 29);
             this.txt_ES.Name = "txt_ES";
             this.txt_ES.Size = new System.Drawing.Size(200, 21);
             this.txt_ES.TabIndex = 30;
@@ -148,7 +148,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(256, 26);
+            this.label4.Location = new System.Drawing.Point(255, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 29);
             this.label4.TabIndex = 21;
@@ -165,7 +165,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.55224F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.44776F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 285F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 286F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txt_ID, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
@@ -192,7 +192,7 @@
             // 
             // txt_tax
             // 
-            this.txt_tax.Location = new System.Drawing.Point(78, 29);
+            this.txt_tax.Location = new System.Drawing.Point(77, 29);
             this.txt_tax.Name = "txt_tax";
             this.txt_tax.Size = new System.Drawing.Size(165, 21);
             this.txt_tax.TabIndex = 31;

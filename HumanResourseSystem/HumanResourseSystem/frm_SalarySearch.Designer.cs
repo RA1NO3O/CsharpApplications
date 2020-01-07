@@ -42,8 +42,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.chk_LIKEMODE = new System.Windows.Forms.CheckBox();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.label5 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -89,7 +89,7 @@
             // 
             this.txt_ID.Location = new System.Drawing.Point(73, 3);
             this.txt_ID.Name = "txt_ID";
-            this.txt_ID.Size = new System.Drawing.Size(161, 21);
+            this.txt_ID.Size = new System.Drawing.Size(160, 21);
             this.txt_ID.TabIndex = 27;
             // 
             // label2
@@ -107,7 +107,7 @@
             // 
             // txt_BasicSalary
             // 
-            this.txt_BasicSalary.Location = new System.Drawing.Point(317, 3);
+            this.txt_BasicSalary.Location = new System.Drawing.Point(316, 3);
             this.txt_BasicSalary.Name = "txt_BasicSalary";
             this.txt_BasicSalary.Size = new System.Drawing.Size(200, 21);
             this.txt_BasicSalary.TabIndex = 28;
@@ -122,7 +122,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.55224F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.44776F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 283F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 284F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txt_ID, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.txt_BasicSalary, 3, 0);
@@ -153,7 +153,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(240, 0);
+            this.label3.Location = new System.Drawing.Point(239, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 25);
             this.label3.TabIndex = 29;
@@ -166,7 +166,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(240, 25);
+            this.label4.Location = new System.Drawing.Point(239, 25);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 27);
             this.label4.TabIndex = 30;
@@ -177,12 +177,12 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(73, 28);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(161, 21);
+            this.textBox1.Size = new System.Drawing.Size(160, 21);
             this.textBox1.TabIndex = 31;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(317, 28);
+            this.textBox2.Location = new System.Drawing.Point(316, 28);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(200, 21);
             this.textBox2.TabIndex = 32;
