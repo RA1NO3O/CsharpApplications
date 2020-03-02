@@ -9,3 +9,14 @@ E:\Dev\CS\Test4\obj\Debug\netcoreapp3.1\Test4.AssemblyInfoInputs.cache
 E:\Dev\CS\Test4\obj\Debug\netcoreapp3.1\Test4.AssemblyInfo.cs
 E:\Dev\CS\Test4\obj\Debug\netcoreapp3.1\Test4.dll
 E:\Dev\CS\Test4\obj\Debug\netcoreapp3.1\Test4.pdb
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Test4\bin\Debug\netcoreapp3.1\Test4.exe
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Test4\bin\Debug\netcoreapp3.1\Test4.deps.json
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Test4\bin\Debug\netcoreapp3.1\Test4.runtimeconfig.json
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Test4\bin\Debug\netcoreapp3.1\Test4.runtimeconfig.dev.json
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Test4\bin\Debug\netcoreapp3.1\Test4.dll
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Test4\bin\Debug\netcoreapp3.1\Test4.pdb
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Test4\obj\Debug\netcoreapp3.1\Test4.csprojAssemblyReference.cache
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Test4\obj\Debug\netcoreapp3.1\Test4.AssemblyInfoInputs.cache
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Test4\obj\Debug\netcoreapp3.1\Test4.AssemblyInfo.cs
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Test4\obj\Debug\netcoreapp3.1\Test4.dll
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Test4\obj\Debug\netcoreapp3.1\Test4.pdb

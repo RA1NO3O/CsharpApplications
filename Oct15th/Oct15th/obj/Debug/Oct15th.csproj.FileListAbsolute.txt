@@ -7,3 +7,12 @@ E:\RA1N\Oct15th\Oct15th\Oct15th\obj\Debug\Oct15th.Properties.Resources.resources
 E:\RA1N\Oct15th\Oct15th\Oct15th\obj\Debug\Oct15th.csproj.GenerateResource.Cache
 E:\RA1N\Oct15th\Oct15th\Oct15th\obj\Debug\Oct15th.exe
 E:\RA1N\Oct15th\Oct15th\Oct15th\obj\Debug\Oct15th.pdb
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct15th\Oct15th\bin\Debug\Oct15th.exe.config
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct15th\Oct15th\bin\Debug\Oct15th.exe
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct15th\Oct15th\bin\Debug\Oct15th.pdb
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct15th\Oct15th\obj\Debug\Oct15th.csprojAssemblyReference.cache
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct15th\Oct15th\obj\Debug\Oct15th.Form1.resources
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct15th\Oct15th\obj\Debug\Oct15th.Properties.Resources.resources
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct15th\Oct15th\obj\Debug\Oct15th.csproj.GenerateResource.cache
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct15th\Oct15th\obj\Debug\Oct15th.exe
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct15th\Oct15th\obj\Debug\Oct15th.pdb

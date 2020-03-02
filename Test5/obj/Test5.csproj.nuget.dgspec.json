@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Dev\\CS\\Test5\\Test5.csproj": {}
+    "E:\\Dev\\SYNC_BY_GitHub\\CsharpApplications\\Test5\\Test5.csproj": {}
   },
   "projects": {
-    "E:\\Dev\\CS\\Test5\\Test5.csproj": {
+    "E:\\Dev\\SYNC_BY_GitHub\\CsharpApplications\\Test5\\Test5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Dev\\CS\\Test5\\Test5.csproj",
+        "projectUniqueName": "E:\\Dev\\SYNC_BY_GitHub\\CsharpApplications\\Test5\\Test5.csproj",
         "projectName": "Test5",
-        "projectPath": "E:\\Dev\\CS\\Test5\\Test5.csproj",
-        "packagesPath": "C:\\Users\\RA1N\\.nuget\\packages\\",
-        "outputPath": "E:\\Dev\\CS\\Test5\\obj\\",
+        "projectPath": "E:\\Dev\\SYNC_BY_GitHub\\CsharpApplications\\Test5\\Test5.csproj",
+        "packagesPath": "C:\\Users\\RainC\\.nuget\\packages\\",
+        "outputPath": "E:\\Dev\\SYNC_BY_GitHub\\CsharpApplications\\Test5\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\RA1N\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\RainC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -57,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

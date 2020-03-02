@@ -9,3 +9,14 @@ E:\Dev\CS\Oct29th\obj\Debug\netcoreapp3.1\Oct29th.AssemblyInfoInputs.cache
 E:\Dev\CS\Oct29th\obj\Debug\netcoreapp3.1\Oct29th.AssemblyInfo.cs
 E:\Dev\CS\Oct29th\obj\Debug\netcoreapp3.1\Oct29th.dll
 E:\Dev\CS\Oct29th\obj\Debug\netcoreapp3.1\Oct29th.pdb
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct29th\bin\Debug\netcoreapp3.1\Oct29th.exe
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct29th\bin\Debug\netcoreapp3.1\Oct29th.deps.json
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct29th\bin\Debug\netcoreapp3.1\Oct29th.runtimeconfig.json
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct29th\bin\Debug\netcoreapp3.1\Oct29th.runtimeconfig.dev.json
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct29th\bin\Debug\netcoreapp3.1\Oct29th.dll
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct29th\bin\Debug\netcoreapp3.1\Oct29th.pdb
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct29th\obj\Debug\netcoreapp3.1\Oct29th.csprojAssemblyReference.cache
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct29th\obj\Debug\netcoreapp3.1\Oct29th.AssemblyInfoInputs.cache
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct29th\obj\Debug\netcoreapp3.1\Oct29th.AssemblyInfo.cs
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct29th\obj\Debug\netcoreapp3.1\Oct29th.dll
+E:\Dev\SYNC_BY_GitHub\CsharpApplications\Oct29th\obj\Debug\netcoreapp3.1\Oct29th.pdb
