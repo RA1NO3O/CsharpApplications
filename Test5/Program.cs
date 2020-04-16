@@ -16,6 +16,5 @@ namespace Test5
             }
             Console.Write(result);
         }
-
     }
 }
